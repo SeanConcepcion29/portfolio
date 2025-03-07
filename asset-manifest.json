@@ -1,13 +1,20 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.0d71035c.css",
-    "main.js": "/portfolio/static/js/main.a54b42bd.js",
+    "main.css": "/portfolio/static/css/main.c6b7d456.css",
+    "main.js": "/portfolio/static/js/main.eee347cc.js",
+    "static/media/ccshs_logo.png": "/portfolio/static/media/ccshs_logo.c4fe328dd02a8bb7ea14.png",
+    "static/media/ccsis_logo.jpg": "/portfolio/static/media/ccsis_logo.46a748df74603d512f11.jpg",
+    "static/media/uplb_logo.png": "/portfolio/static/media/uplb_logo.fcbd1f50367711cdb7f8.png",
+    "static/media/freelancer.png": "/portfolio/static/media/freelancer.c9d47972e2b5c38b1119.png",
+    "static/media/cv.png": "/portfolio/static/media/cv.691a9390b302d3558edf.png",
+    "static/media/contact.png": "/portfolio/static/media/contact.7a26a4dbeb91079428f0.png",
+    "static/media/project.png": "/portfolio/static/media/project.1bd220346183bfb15352.png",
     "index.html": "/portfolio/index.html",
-    "main.0d71035c.css.map": "/portfolio/static/css/main.0d71035c.css.map",
-    "main.a54b42bd.js.map": "/portfolio/static/js/main.a54b42bd.js.map"
+    "main.c6b7d456.css.map": "/portfolio/static/css/main.c6b7d456.css.map",
+    "main.eee347cc.js.map": "/portfolio/static/js/main.eee347cc.js.map"
   },
   "entrypoints": [
-    "static/css/main.0d71035c.css",
-    "static/js/main.a54b42bd.js"
+    "static/css/main.c6b7d456.css",
+    "static/js/main.eee347cc.js"
   ]
 }
