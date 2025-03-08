@@ -1,6 +1,8 @@
 import "./App.css";
 import "./Font.css";
 
+import { FaGithub, FaLinkedin, FaEnvelope, FaFacebook } from "react-icons/fa";
+
 import projectImage from "./images/project.png";
 import cvImage from "./images/cv.png";
 import contactImage from "./images/contact.png";
@@ -21,20 +23,42 @@ import kotlinImage from "./images/kotlin.jpg";
 import pythonImage from "./images/python.png";
 import flutterImage from "./images/flutter.png";
 
+import artisanImage from "./images/artisan.png";
+import bricsImage from "./images/brics.png";
+import cardboardvoyageImage from "./images/cardboard_voyage.png";
+import travelwheelsImage from "./images/travelwheels.png";
+import healthmonImage from "./images/healthmon.png";
+import icsmsImage from "./images/icsms.png";
+
 
 function App() {
   return (
     <div>
       <div className="grid-container">
 
-        <div className="item header">
-          <span className="title title-text"> skiconcepcion </span>
+      <div className="header item">
+        <span className="title title-text">skiconcepcion</span>
+        <div className="social-icons">
+          <a href="https://github.com/SKIConcepcion" target="_blank" rel="noopener noreferrer" className="icon">
+            <FaGithub />
+          </a>
+          <a href="https://www.linkedin.com/in/sean-concepcion-00594430b/" target="_blank" rel="noopener noreferrer" className="icon">
+            <FaLinkedin />
+          </a>
+          <a href="mailto:skiconcepcion@gmail.com" className="icon">
+            <FaEnvelope />
+          </a>
+          <a href="https://www.facebook.com/seankierby.concepcion/" target="_blank" rel="noopener noreferrer" className="icon">
+            <FaFacebook />
+          </a>
         </div>
+      </div>
 
 
         <div className="item profile-card title-text"> 
           <h1> Hi, I am Sean Concepcion </h1>
-          <h4> game designer </h4>
+          <h4> full-stack web developer </h4>
+          <h4> 2D game designer </h4>
           <h4> mobile developer </h4>
         </div>
 
@@ -62,14 +86,13 @@ function App() {
 
 
 
-        <div className="item main-nav-card project-card title-text">
+        <a href="#project" className="item main-nav-card project-card title-text">
           <img src={projectImage} alt="Project Thumbnail" className="project-image" />
           <h4> PROJECTS </h4>
-        </div>
+        </a>
 
 
-
-        <a href="https://read.cv/skiconcepcion" target="_blank" rel="noopener noreferrer" className="item main-nav-card cv-card title-text">
+        <a href="https://concepcion-resume.tiiny.site/" target="_blank" rel="noopener noreferrer" className="item main-nav-card cv-card title-text">
           <img src={cvImage} alt="Project Thumbnail" className="project-image" />
           <h4> VIEW CV </h4>
         </a>
@@ -97,17 +120,17 @@ function App() {
 
           <div className="education-card-item body-text">
             <img src={ccshsImage} alt="Sean Concepcion" className="education-image" />
-            <h2> Calamba City Science High School <br/> 2015 - 2020 </h2>
+            <h2> Calamba City Science High School <br/> 2015 - 2019 </h2>
           </div>
 
           <div className="education-card-item body-text">
             <img src={ccsisImage} alt="Sean Concepcion" className="education-image" />
-            <h2> Calamba City Science Integrated School <br/> 2015 - 2020 </h2>
+            <h2> Calamba City Science Integrated School <br/> 2019 - 2021 </h2>
           </div>
 
           <div className="education-card-item body-text">
             <img src={uplbImage} alt="Sean Concepcion" className="education-image" />
-            <h2> University of the Philippines Los Baños  <br/> 2015 - 2025 </h2>
+            <h2> University of the Philippines Los Baños  <br/> 2021 - Present </h2>
           </div>
         </div>
 
@@ -158,16 +181,41 @@ function App() {
             <div className="techstack-card-item body-text">
               <img src={mongodbImage} alt="Tech" className="techstack-image" />
             </div>
-
-
-
           </div>
         </div>
+      </div>
 
 
 
+      <div id="project" className="project-grid-container">
 
+        <div className="project-header">
+          <h1 className="project-title"> MY PROJECTS </h1>
+        </div>
 
+        <a href="https://brics-alpha.vercel.app/" target="_blank" rel="noopener noreferrer" className="project-item project-item-1 body-text">
+          <img src={bricsImage} alt="brics" className="project-item-image" />
+        </a>
+
+        <div className="project-item project-item-2 body-text">
+          <img src={artisanImage} alt="artisan" className="project-item-image" />
+        </div>
+
+        <a href="https://travelwheelsph.com/" target="_blank" rel="noopener noreferrer" className="project-item project-item-3 body-text">
+          <img src={travelwheelsImage} alt="travelwheels" className="project-item-image" />
+        </a>
+
+        <div className="project-item project-item-4 body-text">
+          <img src={cardboardvoyageImage} alt="cardboardvoyage" className="project-item-image" />
+        </div>
+
+        <div className="project-item project-item-5 body-text">
+          <img src={healthmonImage} alt="healthmon" className="project-item-image" />
+        </div>
+
+        <div className="project-item project-item-6 body-text">
+          <img src={icsmsImage} alt="icsms" className="project-item-image" />
+        </div>
       </div>
     </div>
 
