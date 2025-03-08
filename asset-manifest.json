@@ -1,20 +1,26 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.c6b7d456.css",
-    "main.js": "/portfolio/static/js/main.eee347cc.js",
+    "main.css": "/portfolio/static/css/main.e375731c.css",
+    "main.js": "/portfolio/static/js/main.1da3a215.js",
+    "static/media/travelwheels.png": "/portfolio/static/media/travelwheels.66e5771b1abf2c5948ed.png",
+    "static/media/brics.png": "/portfolio/static/media/brics.4626c48fe3f7d60999e9.png",
     "static/media/ccshs_logo.png": "/portfolio/static/media/ccshs_logo.c4fe328dd02a8bb7ea14.png",
     "static/media/ccsis_logo.jpg": "/portfolio/static/media/ccsis_logo.46a748df74603d512f11.jpg",
+    "static/media/cardboard_voyage.png": "/portfolio/static/media/cardboard_voyage.23e0e89c18cf66d84196.png",
     "static/media/uplb_logo.png": "/portfolio/static/media/uplb_logo.fcbd1f50367711cdb7f8.png",
+    "static/media/icsms.png": "/portfolio/static/media/icsms.b3f30693f00264737ab6.png",
+    "static/media/healthmon.png": "/portfolio/static/media/healthmon.94837a73b2201698dfe5.png",
+    "static/media/artisan.png": "/portfolio/static/media/artisan.6bbf62d9bc3685cd24f9.png",
     "static/media/freelancer.png": "/portfolio/static/media/freelancer.c9d47972e2b5c38b1119.png",
     "static/media/cv.png": "/portfolio/static/media/cv.691a9390b302d3558edf.png",
     "static/media/contact.png": "/portfolio/static/media/contact.7a26a4dbeb91079428f0.png",
     "static/media/project.png": "/portfolio/static/media/project.1bd220346183bfb15352.png",
     "index.html": "/portfolio/index.html",
-    "main.c6b7d456.css.map": "/portfolio/static/css/main.c6b7d456.css.map",
-    "main.eee347cc.js.map": "/portfolio/static/js/main.eee347cc.js.map"
+    "main.e375731c.css.map": "/portfolio/static/css/main.e375731c.css.map",
+    "main.1da3a215.js.map": "/portfolio/static/js/main.1da3a215.js.map"
   },
   "entrypoints": [
-    "static/css/main.c6b7d456.css",
-    "static/js/main.eee347cc.js"
+    "static/css/main.e375731c.css",
+    "static/js/main.1da3a215.js"
   ]
 }
