@@ -634,3 +634,85 @@ html {
     width: 95%;
     height: 95%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+    .grid-container {
+        grid-template-rows: auto;
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .profile-card {
+        grid-column: 1 / 7;
+        grid-row: auto;
+    }
+
+    .profile-card h1 {
+        font-size: 64px;
+    }
+
+    .profile-card h4 {
+        font-size: 40px;
+    }
+
+    .about-card {
+        grid-column: 1 / 7;
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .profile-card {
+        grid-column: 1 / 5;
+    }
+
+    .profile-card h1 {
+        font-size: 48px;
+    }
+
+    .profile-card h4 {
+        font-size: 32px;
+    }
+
+    .about-card {
+        grid-column: 1 / 5;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .profile-card {
+        grid-column: 1 / 3;
+        text-align: center;
+    }
+
+    .profile-card h1 {
+        font-size: 36px;
+    }
+
+    .profile-card h4 {
+        font-size: 24px;
+    }
+
+    .about-card {
+        grid-column: 1 / 3;
+        display: block;
+        text-align: center;
+    }
+}
