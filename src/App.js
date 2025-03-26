@@ -337,7 +337,7 @@ function App() {
             <MDBRow>
               <MDBCol md="8" className="text-center">
                 <a href="https://brics-alpha.vercel.app/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
-                  <MDBCard className="card-hover" style={{ height: '50vh' }}>
+                  <MDBCard className="card-hover" style={{ height: '55vh' }}>
                     <MDBCardBody style={{ color: '#333' }}> 
                       <MDBCardTitle style={{ fontSize: '1.7em', marginBottom: '0' }}> BRICS <span style={{fontSize: '0.7em', paddingLeft: '5px', opacity: '0.5', fontStyle: 'italic'}}> {'<links to the website>'} </span> </MDBCardTitle>
                       <p className="mb-2"> ICS Booking and Reservation Website </p>
@@ -349,7 +349,7 @@ function App() {
 
               <MDBCol md="4" className="text-center">
                 <a href="https://travelwheelsph.com/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
-                  <MDBCard className="card-hover" style={{ height: '50vh' }}>
+                  <MDBCard className="card-hover" style={{ height: '55vh' }}>
                     <MDBCardBody style={{ color: '#333' }}> 
                       <MDBCardTitle style={{ fontSize: '1.7em', marginBottom: '0' }}> Travel Wheels <span style={{fontSize: '0.7em', paddingLeft: '5px', opacity: '0.5', fontStyle: 'italic'}}> {'<links to the website>'} </span> </MDBCardTitle>
                       <p className="mb-2"> Travel Booking and Quotation Website </p>
@@ -362,7 +362,7 @@ function App() {
 
             <MDBRow className="mt-4">
               <MDBCol md="4" className="text-center">
-                <MDBCard className="card-hover" style={{ height: '45vh' }}>
+                <MDBCard className="card-hover" style={{ height: '50vh' }}>
                   <MDBCardBody>
                     <MDBCardTitle style={{ fontSize: '1.7em', marginBottom: '0' }}> ARTISAN </MDBCardTitle>
                     <p className="mb-2"> Network Simulator Mobile Application </p>
@@ -372,7 +372,7 @@ function App() {
               </MDBCol>
 
               <MDBCol md="5" className="text-center">
-                <MDBCard className="card-hover" style={{ height: '45vh' }}>
+                <MDBCard className="card-hover" style={{ height: '50vh' }}>
                   <MDBCardBody>
                     <MDBCardTitle style={{ fontSize: '1.7em', marginBottom: '0' }}> ICS CMS </MDBCardTitle>
                     <p className="mb-2"> ICS Clearance Management System Website </p>
@@ -382,7 +382,7 @@ function App() {
               </MDBCol>
 
               <MDBCol md="3" className="text-center">
-                <MDBCard className="card-hover" style={{ height: '45vh' }}>
+                <MDBCard className="card-hover" style={{ height: '50vh' }}>
                   <MDBCardBody>
                     <MDBCardTitle style={{ fontSize: '1.7em', marginBottom: '0' }}> HealthMon </MDBCardTitle>
                     <p className="mb-4"> Health Monitoring Mobile Application </p>
