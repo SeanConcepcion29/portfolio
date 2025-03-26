@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.8f9743a5.css",
-    "main.js": "/portfolio/static/js/main.4ee33aee.js",
+    "main.js": "/portfolio/static/js/main.af35f793.js",
     "static/media/travelwheels.png": "/portfolio/static/media/travelwheels.66e5771b1abf2c5948ed.png",
     "static/media/brics.png": "/portfolio/static/media/brics.4626c48fe3f7d60999e9.png",
     "static/media/ccshs_logo.png": "/portfolio/static/media/ccshs_logo.c4fe328dd02a8bb7ea14.png",
@@ -10,15 +10,16 @@
     "static/media/glg.jpg": "/portfolio/static/media/glg.d418ffdb13bab467f5b4.jpg",
     "static/media/uplb_logo.png": "/portfolio/static/media/uplb_logo.fcbd1f50367711cdb7f8.png",
     "static/media/icsms.png": "/portfolio/static/media/icsms.c708617c55692cdc30db.png",
+    "static/media/firstraider.jpg": "/portfolio/static/media/firstraider.00174c513e70a844e0ab.jpg",
     "static/media/healthmon.png": "/portfolio/static/media/healthmon.aa103d6e0ae2ccbb6b08.png",
     "static/media/artisan.png": "/portfolio/static/media/artisan.6bbf62d9bc3685cd24f9.png",
     "static/media/freelancer.png": "/portfolio/static/media/freelancer.c9d47972e2b5c38b1119.png",
     "index.html": "/portfolio/index.html",
     "main.8f9743a5.css.map": "/portfolio/static/css/main.8f9743a5.css.map",
-    "main.4ee33aee.js.map": "/portfolio/static/js/main.4ee33aee.js.map"
+    "main.af35f793.js.map": "/portfolio/static/js/main.af35f793.js.map"
   },
   "entrypoints": [
     "static/css/main.8f9743a5.css",
-    "static/js/main.4ee33aee.js"
+    "static/js/main.af35f793.js"
   ]
 }
