@@ -55,85 +55,73 @@ function App() {
 
 
       {/* Header Section */}
-      <MDBNavbar style={{backgroundColor: '#333', color: 'white'}}>
-        <MDBContainer fluid>
-          <div className="d-flex w-100 justify-content-between align-items-center">
+      <MDBNavbar dark bgColor="dark" className="px-3">
+      <MDBContainer fluid>
+        <MDBRow className="w-100 d-flex align-items-center justify-content-between">
+          
+          {/* Leftmost Text */}
+          <MDBCol size="auto">
+            <MDBNavbarBrand className="text-white">skiconcepcion</MDBNavbarBrand>
+          </MDBCol>
 
-            {/* Leftmost Text */}
-            <MDBNavbarBrand className="ms-3" style={{color: 'white'}}>skiconcepcion</MDBNavbarBrand>
+          {/* Rightmost Icons */}
+          <MDBCol size="auto" className="d-flex">
+            <MDBCol size="auto" className="me-4">
+              <a 
+                href="https://github.com/SeanConcepcion29" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="d-flex align-items-center gap-2 text-white text-decoration-none"
+              >
+                <FaGithub size={25} />
+                <p className="m-0">school</p>
+              </a>
+            </MDBCol>
 
-            {/* Rightmost Icons */}
-            <div className="d-flex">
-              <div className="me-4">
-                <a 
-                  href="https://github.com/SeanConcepcion29" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  style={{ 
-                    display: "flex", 
-                    alignItems: "center", 
-                    gap: "7px", 
-                    textDecoration: "none"
-                  }}
-                  className="icon-link"
-                >
-                  <FaGithub size={25} className="icon" />
-                  <p style={{ margin: 0 }}>school</p>
-                </a>
-              </div>
+            <MDBCol size="auto" className="me-4">
+              <a 
+                href="https://github.com/SKIConcepcion" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="d-flex align-items-center gap-2 text-white text-decoration-none"
+              >
+                <FaGithub size={25} />
+                <p className="m-0">professional</p>
+              </a>
+            </MDBCol>
 
-              <div className="me-4">
-                <a 
-                  href="https://github.com/SKIConcepcion" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  style={{ 
-                    display: "flex", 
-                    alignItems: "center", 
-                    gap: "7px", 
-                    textDecoration: "none"
-                  }}
-                  className="icon-link"
-                >
-                  <FaGithub size={25} className="icon" />
-                  <p style={{ margin: 0 }}>professional</p>
-                </a>
-              </div>
+            <MDBCol size="auto" className="me-4">
+              <a 
+                href="https://www.linkedin.com/in/sean-concepcion-00594430b/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-white"
+              >
+                <FaLinkedin size={25} />
+              </a>
+            </MDBCol>
 
-              <div className="me-4">
-                <a 
-                  href="https://www.linkedin.com/in/sean-concepcion-00594430b/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="icon-link"
-                >
-                  <FaLinkedin size={25} className="icon" />
-                </a>
-              </div>
+            <MDBCol size="auto" className="me-4">
+              <a href="mailto:skiconcepcion@gmail.com" className="text-white">
+                <FaEnvelope size={25} />
+              </a>
+            </MDBCol>
 
-              <div className="me-4">
-                <a 
-                  href="mailto:skiconcepcion@gmail.com"
-                  className="icon-link"
-                >
-                  <FaEnvelope size={25} className="icon" />
-                </a>
-              </div>
+            <MDBCol size="auto" className="me-0">
+              <a 
+                href="https://www.facebook.com/seankierby.concepcion/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-white"
+              >
+                <FaFacebook size={25} />
+              </a>
+            </MDBCol>
+          </MDBCol>
 
-              <div className="me-4">
-                <a 
-                  href="https://www.facebook.com/seankierby.concepcion/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="icon-link"
-                >
-                  <FaFacebook size={25} className="icon" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </MDBContainer>
-      </MDBNavbar>
+        </MDBRow>
+      </MDBContainer>
+    </MDBNavbar>
 
 
 
@@ -351,7 +339,7 @@ function App() {
                 <a href="https://brics-alpha.vercel.app/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
                   <MDBCard className="card-hover" style={{ height: '50vh' }}>
                     <MDBCardBody style={{ color: '#333' }}> 
-                      <MDBCardTitle style={{ fontSize: '1.7em', marginBottom: '0' }}> BRICS </MDBCardTitle>
+                      <MDBCardTitle style={{ fontSize: '1.7em', marginBottom: '0' }}> BRICS <span style={{fontSize: '0.7em', paddingLeft: '5px', opacity: '0.5', fontStyle: 'italic'}}> {'<links to the website>'} </span> </MDBCardTitle>
                       <p className="mb-2"> ICS Booking and Reservation Website </p>
                       <MDBCardImage src={bricsImage} className="img-fluid" style={{ objectFit: "cover" }} />
                     </MDBCardBody>
@@ -363,7 +351,7 @@ function App() {
                 <a href="https://travelwheelsph.com/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
                   <MDBCard className="card-hover" style={{ height: '50vh' }}>
                     <MDBCardBody style={{ color: '#333' }}> 
-                      <MDBCardTitle style={{ fontSize: '1.7em', marginBottom: '0' }}> Travel Wheels </MDBCardTitle>
+                      <MDBCardTitle style={{ fontSize: '1.7em', marginBottom: '0' }}> Travel Wheels <span style={{fontSize: '0.7em', paddingLeft: '5px', opacity: '0.5', fontStyle: 'italic'}}> {'<links to the website>'} </span> </MDBCardTitle>
                       <p className="mb-2"> Travel Booking and Quotation Website </p>
                       <MDBCardImage src={travelwheelsImage} className="img-fluid" style={{ objectFit: "cover" }} />
                     </MDBCardBody>
