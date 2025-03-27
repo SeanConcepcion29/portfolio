@@ -181,7 +181,7 @@ function App() {
                 <MDBCol md="4" className="text-center">
                   <MDBCardBody>
                     <MDBCardTitle> MY WORK </MDBCardTitle>
-                    <p>Most of his work revolves around mobile application, full-stack website, and 2D game development.</p>
+                    <p>Most of his work revolves around Android mobile application, full-stack website, and 2D game development.</p>
                   </MDBCardBody>
                 </MDBCol>
                 <MDBCol md="4" className="text-center">
