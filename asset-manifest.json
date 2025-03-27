@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.8f9743a5.css",
-    "main.js": "/portfolio/static/js/main.af35f793.js",
+    "main.js": "/portfolio/static/js/main.6f13b568.js",
     "static/media/travelwheels.png": "/portfolio/static/media/travelwheels.66e5771b1abf2c5948ed.png",
     "static/media/brics.png": "/portfolio/static/media/brics.4626c48fe3f7d60999e9.png",
     "static/media/ccshs_logo.png": "/portfolio/static/media/ccshs_logo.c4fe328dd02a8bb7ea14.png",
@@ -16,10 +16,10 @@
     "static/media/freelancer.png": "/portfolio/static/media/freelancer.c9d47972e2b5c38b1119.png",
     "index.html": "/portfolio/index.html",
     "main.8f9743a5.css.map": "/portfolio/static/css/main.8f9743a5.css.map",
-    "main.af35f793.js.map": "/portfolio/static/js/main.af35f793.js.map"
+    "main.6f13b568.js.map": "/portfolio/static/js/main.6f13b568.js.map"
   },
   "entrypoints": [
     "static/css/main.8f9743a5.css",
-    "static/js/main.af35f793.js"
+    "static/js/main.6f13b568.js"
   ]
 }
