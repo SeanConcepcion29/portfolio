@@ -101,20 +101,9 @@ function App() {
               </a>
             </MDBCol>
 
-            <MDBCol size="auto" className="me-4">
+            <MDBCol size="auto" className="me-0">
               <a href="mailto:skiconcepcion@gmail.com" className="text-white">
                 <FaEnvelope size={25} />
-              </a>
-            </MDBCol>
-
-            <MDBCol size="auto" className="me-0">
-              <a 
-                href="https://www.facebook.com/seankierby.concepcion/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-white"
-              >
-                <FaFacebook size={25} />
               </a>
             </MDBCol>
           </MDBCol>
