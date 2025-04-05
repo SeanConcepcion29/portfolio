@@ -376,48 +376,51 @@ function App() {
 
             <MDBRow className="mt-4">
               <MDBCol md="4" className="text-center">
-                <MDBCard className="card-hover" style={{ height: '45vh' }}>
-                  <MDBCardBody>
-                    <MDBCardTitle style={{ fontSize: '1.7em', marginBottom: '0' }}> ARTISAN </MDBCardTitle>
-                    <p className="mb-1">
-                      Network Simulator Mobile Application
-                      <span style={{ width: '10px', height: '10px', backgroundColor: '#fddc5c', borderRadius: '50%', display: 'inline-block', marginLeft: '7px'}}></span>
-                    </p>
-                    <MDBCardImage src={artisanImage} className="img-fluid" style={{ objectFit: "contain", width: "90%", height: "90%" }} />
-                  </MDBCardBody>
-                </MDBCard>
+                <a href="https://github.com/SKIConcepcion/artisan" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
+                  <MDBCard className="card-hover" style={{ height: '45vh' }}>
+                    <MDBCardBody style={{ color: '#333' }}>
+                      <MDBCardTitle style={{ fontSize: '1.7em', marginBottom: '0' }}> ARTISAN </MDBCardTitle>
+                      <p className="mb-1">
+                        Network Simulator Mobile Application
+                        <span style={{ width: '10px', height: '10px', backgroundColor: '#fddc5c', borderRadius: '50%', display: 'inline-block', marginLeft: '7px'}}></span>
+                      </p>
+                      <span style={{fontSize: '1em', opacity: '0.5', fontStyle: 'italic'}}> {'<links to the github repository>'} </span>
+                      <MDBCardImage src={artisanImage} className="img-fluid" style={{ objectFit: "contain", width: "90%", height: "90%" }} />
+                    </MDBCardBody>
+                  </MDBCard>
+                </a>
               </MDBCol>
 
               <MDBCol md="5" className="text-center">
-                <MDBCard className="card-hover" style={{ height: '45vh' }}>
-                  <MDBCardBody>
-                    <MDBCardTitle style={{ fontSize: '1.7em', marginBottom: '0' }}> ICS CMS </MDBCardTitle>
-                    <p className="mb-1">
-                      ICS Clearance Management System Website
-                      <span style={{ width: '10px', height: '10px', backgroundColor: '#39e75f', borderRadius: '50%', display: 'inline-block', marginLeft: '7px'}}></span>
-                    </p>
-                    <MDBCardImage src={icsmsImage} className="img-fluid" style={{ objectFit: "contain", width: "90%", height: "90%" }} />
-                  </MDBCardBody>
-                </MDBCard>
+                  <MDBCard className="card-hover" style={{ height: '45vh' }}>
+                    <MDBCardBody>
+                      <MDBCardTitle style={{ fontSize: '1.7em', marginBottom: '0' }}> ICS CMS </MDBCardTitle>
+                      <p className="mb-1">
+                        ICS Clearance Management System Website
+                        <span style={{ width: '10px', height: '10px', backgroundColor: '#39e75f', borderRadius: '50%', display: 'inline-block', marginLeft: '7px'}}></span>
+                      </p>
+                      <MDBCardImage src={icsmsImage} className="img-fluid" style={{ objectFit: "contain", width: "90%", height: "90%" }} />
+                    </MDBCardBody>
+                  </MDBCard>
               </MDBCol>
 
               <MDBCol md="3" className="text-center">
-                <MDBCard className="card-hover" style={{ height: '45vh' }}>
-                  <MDBCardBody>
-                    <MDBCardTitle style={{ fontSize: '1.7em', marginBottom: '0' }}> HealthMon </MDBCardTitle>
-                    <p className="mb-1">
-                      Health Monitoring Mobile Application
-                      <span style={{ width: '10px', height: '10px', backgroundColor: '#39e75f', borderRadius: '50%', display: 'inline-block', marginLeft: '7px'}}></span>
-                    </p>
-                    <MDBCardImage src={healthmonImage} className="img-fluid" style={{ objectFit: "contain", width: "90%", height: "90%" }} />
-                  </MDBCardBody>
-                </MDBCard>
+                  <MDBCard className="card-hover" style={{ height: '45vh' }}>
+                    <MDBCardBody>
+                      <MDBCardTitle style={{ fontSize: '1.7em', marginBottom: '0' }}> HealthMon </MDBCardTitle>
+                      <p className="mb-1">
+                        Health Monitoring Mobile Application
+                        <span style={{ width: '10px', height: '10px', backgroundColor: '#39e75f', borderRadius: '50%', display: 'inline-block', marginLeft: '7px'}}></span>
+                      </p>
+                      <MDBCardImage src={healthmonImage} className="img-fluid" style={{ objectFit: "contain", width: "90%", height: "90%" }} />
+                    </MDBCardBody>
+                  </MDBCard>
               </MDBCol>
             </MDBRow>
 
             <MDBRow className="mt-4">
               <MDBCol md="3" className="text-center">
-              <MDBCard className="card-hover" style={{ height: '60vh' }}>
+              <MDBCard className="card-hover" style={{ height: '65vh' }}>
                   <MDBCardBody>
                     <MDBCardTitle style={{ fontSize: '1.7em', marginBottom: '0' }}> Cardboard Voyage </MDBCardTitle>
                     <p className="mb-1">
@@ -431,7 +434,7 @@ function App() {
 
               <MDBCol md="3" className="text-center">
                 <a href="https://expo.dev/preview/update?message=Fix%20SDK%20issue&updateRuntimeVersion=1.0.0&createdAt=2025-03-26T10%3A18%3A30.706Z&slug=exp&projectId=1803f557-182b-4193-a1ce-7b1f53b2968f&group=94e01bfb-47dc-4bb6-bd40-9fb2ecb5aed7" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
-                  <MDBCard className="card-hover" style={{ height: '60vh' }}>
+                  <MDBCard className="card-hover" style={{ height: '65vh' }}>
                    <MDBCardBody style={{ color: '#333' }}> 
                       <MDBCardTitle style={{ fontSize: '1.7em', marginBottom: '0' }}> First Raiders </MDBCardTitle>
                       <p className="mb-1">
