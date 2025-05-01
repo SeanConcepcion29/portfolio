@@ -14,21 +14,6 @@ html {
 }
 
 
-
-.icon-link {
-    color: white;
-    transition: color 0.1s;
-}
-
-.icon-link:hover {
-    color: #efbf04; 
-}
-
-.icon {
-    transition: color 0.1s;
-}
-
-
 /* Style for the active tab */
 .active-tab-home {
     border-bottom: 3px solid #49DEF7; 
