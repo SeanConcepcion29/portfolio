@@ -1,25 +1,29 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.8f9743a5.css",
-    "main.js": "/portfolio/static/js/main.ae1c7ce0.js",
+    "main.css": "/portfolio/static/css/main.360b07a2.css",
+    "main.js": "/portfolio/static/js/main.f73c0bd1.js",
     "static/media/travelwheels.png": "/portfolio/static/media/travelwheels.66e5771b1abf2c5948ed.png",
+    "static/media/timeline.png": "/portfolio/static/media/timeline.4dc6f3c0ebe2d2de6468.png",
     "static/media/brics.png": "/portfolio/static/media/brics.4626c48fe3f7d60999e9.png",
-    "static/media/ccshs_logo.png": "/portfolio/static/media/ccshs_logo.c4fe328dd02a8bb7ea14.png",
-    "static/media/ccsis_logo.jpg": "/portfolio/static/media/ccsis_logo.46a748df74603d512f11.jpg",
     "static/media/cardboard_voyage.png": "/portfolio/static/media/cardboard_voyage.8b787859dc258c8e568a.png",
-    "static/media/glg.jpg": "/portfolio/static/media/glg.d418ffdb13bab467f5b4.jpg",
-    "static/media/uplb_logo.png": "/portfolio/static/media/uplb_logo.fcbd1f50367711cdb7f8.png",
+    "static/media/org-title.png": "/portfolio/static/media/org-title.16d1254db725871e7a2c.png",
+    "static/media/title.png": "/portfolio/static/media/title.a49eb79303b410005f24.png",
+    "static/media/tech-title.png": "/portfolio/static/media/tech-title.c21cbb6116588b4358c5.png",
+    "static/media/educ-title.png": "/portfolio/static/media/educ-title.4c3186c47de5954c8949.png",
     "static/media/icsms.png": "/portfolio/static/media/icsms.c708617c55692cdc30db.png",
+    "static/media/about-title.png": "/portfolio/static/media/about-title.fa69fc68cc894748505c.png",
+    "static/media/timeline-title.png": "/portfolio/static/media/timeline-title.372b3dcefd9cf00a5bb2.png",
+    "static/media/project-title.png": "/portfolio/static/media/project-title.a9ae06002c0626faf04d.png",
     "static/media/firstraider.jpg": "/portfolio/static/media/firstraider.00174c513e70a844e0ab.jpg",
     "static/media/healthmon.png": "/portfolio/static/media/healthmon.aa103d6e0ae2ccbb6b08.png",
     "static/media/artisan.png": "/portfolio/static/media/artisan.fca1431e866d2c00c3c5.png",
-    "static/media/freelancer.png": "/portfolio/static/media/freelancer.c9d47972e2b5c38b1119.png",
+    "static/media/logo.png": "/portfolio/static/media/logo.65dd7bd903071e12424d.png",
     "index.html": "/portfolio/index.html",
-    "main.8f9743a5.css.map": "/portfolio/static/css/main.8f9743a5.css.map",
-    "main.ae1c7ce0.js.map": "/portfolio/static/js/main.ae1c7ce0.js.map"
+    "main.360b07a2.css.map": "/portfolio/static/css/main.360b07a2.css.map",
+    "main.f73c0bd1.js.map": "/portfolio/static/js/main.f73c0bd1.js.map"
   },
   "entrypoints": [
-    "static/css/main.8f9743a5.css",
-    "static/js/main.ae1c7ce0.js"
+    "static/css/main.360b07a2.css",
+    "static/js/main.f73c0bd1.js"
   ]
 }
