@@ -2,12 +2,10 @@ import "mdb-react-ui-kit/dist/css/mdb.min.css";
 import "./App.css";
 
 import { useState } from "react";
-import { FaGithub, FaLinkedin, FaEnvelope, FaFacebook } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 import {
   MDBContainer,
-  MDBNavbar,
-  MDBNavbarBrand,
   MDBNavbarNav,
   MDBNavbarItem,
   MDBNavbarLink,
@@ -15,7 +13,6 @@ import {
   MDBCardImage,
   MDBCardBody,
   MDBCardTitle,
-  MDBTypography,
   MDBCol,
   MDBRow
 } from "mdb-react-ui-kit";
@@ -24,8 +21,6 @@ import logoImage from './images/logo.png'
 import titleImage from './images/title.png'
 import aboutTitle from './images/about-title.png'
 import techTitle from './images/tech-title.png'
-import educTitle from './images/educ-title.png'
-import orgTitle from './images/org-title.png'
 import projectTitle from './images/project-title.png'
 import timelineTitle from './images/timeline-title.png'
 import timeline from './images/timeline.png'
@@ -45,7 +40,50 @@ import cardboardvoyageImage from "./images/cardboard_voyage.png";
 import travelwheelsImage from "./images/travelwheels.png";
 import healthmonImage from "./images/healthmon.png";
 import icsmsImage from "./images/icsms.png";
-import firstraiderImage from "./images/firstraider.jpg";
+import firstraiderImage from "./images/firstraider.png";
+import boatsImage from "./images/boats.png";
+
+
+function ProjectCard(title, desc, done, type, purpose) {
+
+  const doneColor = done ? '#C4D498' : '#FECE52'; 
+  const typeColor = type === 'mobile application' ? '#83E2DA' : type === 'website' ? '#F376A0' : '#BFBFBF';
+  const purposeColor = purpose === 'school activity' ? '#FFA039' : purpose === 'personal project' ? '#BC8CE0' : purpose === 'freelance project' ? '#3FCFFD' : '#BFBFBF';
+
+  return (
+    <div>
+      <MDBCardTitle className="card-title" style={{ fontSize: '2rem' }}>
+        {title}
+      </MDBCardTitle>
+
+      {/* Status Row */}
+      <MDBRow className="mb-3 g-2">
+        <MDBCol size="auto">
+          <MDBCard style={{ backgroundColor: doneColor, fontSize: '0.8rem', padding: '0.3em 0.8em', letterSpacing: '1px', color: 'white', borderRadius: '7px', border: "none", boxShadow: "none" }}>
+            {done ? 'completed' : 'ongoing'}
+          </MDBCard>
+        </MDBCol>
+        <MDBCol size="auto">
+         <MDBCard style={{ backgroundColor: typeColor, fontSize: '0.8rem', padding: '0.3em 0.8em', letterSpacing: '1px', color: 'white', borderRadius: '7px', border: "none", boxShadow: "none" }}>
+            {type}
+          </MDBCard>
+        </MDBCol>
+        <MDBCol size="auto">
+          <MDBCard style={{ backgroundColor: purposeColor, fontSize: '0.8rem', padding: '0.3em 0.8em', letterSpacing: '1px', color: 'white', borderRadius: '7px', border: "none", boxShadow: "none" }}>
+            {purpose}
+          </MDBCard>
+        </MDBCol>
+      </MDBRow>
+
+
+      <p className="card-text" style={{ fontSize: '1rem' }}>
+        {desc}
+      </p>
+    </div>
+  );
+}
+
+
 
 function Home() {
   return (
@@ -70,14 +108,15 @@ function Home() {
           src={titleImage}
           style={{
             height: "auto",
-            width: "50vw", 
-            maxWidth: "60vw",
+            width: "60vw", 
+            maxWidth: "900px",
           }}
         />
       </MDBCardBody>
     </MDBCard>
   );
 }
+
 
 
 function About() {
@@ -96,14 +135,59 @@ function About() {
           <p>Most of his work revolves around Android mobile application, full-stack website, and 2D game development.</p>
         </MDBCol>
         <MDBCol md="4" className="text-start">
-          <MDBCardTitle>FUN FACT</MDBCardTitle>
-          <p>His favorite sorting algorithm is no other than Bogo Sort, not for its efficiency, but for its fairness — every permutation given an equal chance, every shuffle a test of fate.</p>
-        </MDBCol>
+          <MDBCardTitle> CONTACTS </MDBCardTitle>
+            <MDBCol size="auto" className="d-flex">
+              <MDBCol size="auto" className="me-4">
+                <a 
+                  href="https://github.com/SeanConcepcion29" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="d-flex align-items-center gap-2 text-decoration-none"
+                  style={{color: '#333'}}
+                >
+                  <FaGithub size={25} style={{color: '#333'}}/>
+                  <p className="m-0" style={{color: '#333'}}>school</p>
+                </a>
+              </MDBCol>
+
+              <MDBCol size="auto" className="me-4">
+                <a 
+                  href="https://github.com/SKIConcepcion" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="d-flex align-items-center gap-2 text-decoration-none"
+                  style={{color: '#333'}}
+                >
+                  <FaGithub size={25} style={{color: '#333'}}/>
+                  <p className="m-0" style={{color: '#333'}}>professional</p>
+                </a>
+              </MDBCol>
+
+              <MDBCol size="auto" className="me-4">
+                <a 
+                  href="https://www.linkedin.com/in/sean-concepcion-00594430b/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  style={{color: '#333'}}
+                >
+                  <FaLinkedin size={25} style={{color: '#333'}}/>
+                </a>
+              </MDBCol>
+
+              <MDBCol size="auto" className="me-0">
+                <a href="mailto:skiconcepcion@gmail.com" style={{color: '#333'}}>
+                  <FaEnvelope size={25} style={{color: '#333'}}/>
+                </a>
+              </MDBCol>
+            </MDBCol>
+          </MDBCol>
       </MDBRow>
+      
 
       <MDBRow className="mt-2 g-4">
         <MDBCol md="4" className="text-start">
-          <img src={techTitle} style={{height: "auto", width: "50vw", maxWidth: '300px'}} className="p-2"/>
+          <img src={techTitle} style={{ height: "auto", width: "50vw", maxWidth: '300px' }} className="p-2" />
+          
           <MDBRow className="mt-4">
             {[
               kotlinImage,
@@ -115,174 +199,171 @@ function About() {
               flutterImage,
               mongodbImage,
             ].map((imgSrc, index) => (
-              <MDBCol sm="4" xs="12" className="p-2 d-flex justify-content-center" key={index}>
-                <MDBCardImage 
-                  src={imgSrc} 
-                  alt={`Tech ${index + 1}`} 
+              <MDBCol size="4" className="p-2 d-flex justify-content-center" key={index}>
+                <MDBCardImage
+                  src={imgSrc}
+                  alt={`Tech ${index + 1}`}
                   style={{ width: '80%', height: 'auto', objectFit: 'contain' }}
                 />
-            </MDBCol>
+              </MDBCol>
             ))}
           </MDBRow>
         </MDBCol>
 
         <MDBCol md="8" className="text-start">
           <MDBCol>
-            <img src={timelineTitle} style={{height: "auto", width: "50vw", maxWidth: '240px'}} className="p-2"/> 
+            <img src={timelineTitle} style={{ height: "auto", width: "50vw", maxWidth: '240px' }} className="p-2" />
           </MDBCol>
           <MDBCol className="mt-4">
-            <img src={timeline} className="img-fluid p-2 timeline-image" style={{width: "100%", height: "auto", objectFit: "contain"}} alt="Timeline"/>
+            <img src={timeline} className="img-fluid p-2 timeline-image" style={{ width: "100%", height: "auto", objectFit: "contain" }} alt="Timeline" />
           </MDBCol>
         </MDBCol>
       </MDBRow>
-
     </MDBCard>
   );
 }
+
+
 
 function Project() {
   return (
-    <MDBCard style={{ border: "none", boxShadow: "none", overflow: "hidden" }}>
-        <MDBRow className="mt-3 w-100 m-0 h-100 d-flex" id="projects">
-          <MDBCol>
+    <MDBCard style={{ border: "none", boxShadow: "none", overflow: "hidden", color: '#333'}} className="mt-3">
+
+      <div className="d-flex justify-content-center mb-4">
+        <img src={projectTitle} style={{height: "auto", width: "50vw", maxWidth: '300px'}} className="p-2 text-center"/>
+      </div>
+      
+
+      <MDBCard className="border mb-3">
+        <MDBCardBody> 
+          <MDBRow className="g-4">
+            <MDBCol md="5">
+              <MDBCardImage src={bricsImage} alt="Card image" fluid className="rounded h-100" style={{objectFit: 'contain'}}/>
+            </MDBCol>
+            <MDBCol md="7">
+              <MDBCardBody className="text-start">
+                {ProjectCard(
+                  "BRICS: Booking and Reservation System of Institute of Computer Science",
+                  "BRICS is a website which aims to ease the process of booking and reservation of ICS rooms and facilities. This system is an improvement from the current manual system of booking and reservation, having the vision to digitize most of the process for convenience and faster transactions.",
+                  true, "website", "school activity"
+                )}
+                <div className="mt-3"/>
+                <a href="https://brics-alpha.vercel.app/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}> Click here to visit website </a>
+              </MDBCardBody>
+            </MDBCol>
+          </MDBRow>
+        </MDBCardBody>
+      </MDBCard>
 
 
-          <MDBContainer className="text-center mb-4">
-            <img src={projectTitle} style={{height: "auto", width: "50vw", maxWidth: '300px'}} className="p-2"/>
+      <MDBCard className="border mb-3">
+        <MDBCardBody> 
+          <MDBRow className="g-4">
+            <MDBCol md="5">
+              <MDBCardImage src={travelwheelsImage} alt="Card image" fluid className="rounded h-100" style={{objectFit: 'contain'}}/>
+            </MDBCol>
+            <MDBCol md="7">
+              <MDBCardBody className="text-start">
+                {ProjectCard(
+                  "TravelWheels",
+                  "Travel Tayo Car Rental and Tours is a private owned business, located at Unit 2, 2nd Flr, Hersyl Building, Blk 5 Lot 25 Ph4 Golden City Subdivision, Brgy. Dita, Sta Rosa, Laguna. Founded on October 2015, the company has projected revenues and started to establish its name and connections in the local market. It foresees potentials and has expanded the range of services vigorously.",
+                  true, "website", "freelance project"
+                )}
+                <div className="mt-3"/>
+                <a href="https://travelwheelsph.com/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}> Click here to visit website </a>
+              </MDBCardBody>
+            </MDBCol>
+          </MDBRow>
+        </MDBCardBody>
+      </MDBCard>
+      
 
-            <MDBRow className="justify-content-center" style={{ fontSize: '1em' }}>
-              <MDBCol size="auto" className="d-flex align-items-center me-3">
-                <span style={{ width: '10px', height: '10px', backgroundColor: '#fddc5c', borderRadius: '50%', display: 'inline-block', marginRight: '5px' }}></span>
-                Ongoing
-              </MDBCol>
-              <MDBCol size="auto" className="d-flex align-items-center">
-                <span style={{ width: '10px', height: '10px', backgroundColor: '#39e75f', borderRadius: '50%', display: 'inline-block', marginRight: '5px' }}></span>
-                Finished
-              </MDBCol>
-            </MDBRow>
-          </MDBContainer>
+      <MDBCard className="border mb-3">
+        <MDBCardBody> 
+          <MDBRow className="g-4">
+            <MDBCol md="5">
+              <MDBCardImage src={boatsImage} alt="Card image" fluid className="rounded h-100" style={{objectFit: 'contain'}}/>
+            </MDBCol>
+            <MDBCol md="7">
+              <MDBCardBody className="text-start">
+                {ProjectCard(
+                  "BOATS (Boat in Ocean: Animation and Terrain Simulation",
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                  false, "website", "school activity"
+                )}
+                <div className="mt-3"/>
+                <a href="https://seanconcepcion29.github.io/CMSC-161-BOATS/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}> Click here to visit website </a>
+              </MDBCardBody>
+            </MDBCol>
+          </MDBRow>
+        </MDBCardBody>
+      </MDBCard>
 
-
-
-            <MDBRow>
-              <MDBCol md="8" className="text-center">
-                <a href="https://brics-alpha.vercel.app/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
-                  <MDBCard className="card-hover" style={{ height: '55vh' }}>
-                    <MDBCardBody style={{ color: '#333' }}> 
-                      <MDBCardTitle style={{ fontSize: '1.7em', marginBottom: '0' }}> BRICS </MDBCardTitle> 
-                      <p className="mb-1">
-                        ICS Booking and Reservation Website
-                        <span style={{ width: '10px', height: '10px', backgroundColor: '#39e75f', borderRadius: '50%', display: 'inline-block', marginLeft: '7px'}}></span>
-                      </p>
-                      <span style={{fontSize: '1em', opacity: '0.5', fontStyle: 'italic'}}> {'<links to the website>'} </span>
-                      <MDBCardImage src={bricsImage} className="img-fluid" style={{ objectFit: "contain", width: "90%", height: "90%" }} />
-                    </MDBCardBody>
-                  </MDBCard>
-                </a>
-              </MDBCol>
-
-              <MDBCol md="4" className="text-center">
-                <a href="https://travelwheelsph.com/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
-                  <MDBCard className="card-hover" style={{ height: '55vh' }}>
-                    <MDBCardBody style={{ color: '#333' }}> 
-                      <MDBCardTitle style={{ fontSize: '1.7em', marginBottom: '0' }}> Travel Wheels </MDBCardTitle>
-                      <p className="mb-1">
-                        Travel Booking and Quotation Website
-                        <span style={{ width: '10px', height: '10px', backgroundColor: '#fddc5c', borderRadius: '50%', display: 'inline-block', marginLeft: '7px'}}></span>
-                      </p>
-                      <span style={{fontSize: '1em', opacity: '0.5', fontStyle: 'italic', marginBottom: '0' }}> {'<links to the website>'} </span>
-                      <MDBCardImage src={travelwheelsImage} className="img-fluid" style={{ objectFit: "contain", width: "90%", height: "90%" }} />
-                    </MDBCardBody>
-                  </MDBCard>
-                </a> 
-              </MDBCol>
-            </MDBRow>
-
-            <MDBRow className="mt-4">
-              <MDBCol md="4" className="text-center">
-                <a href="https://github.com/SKIConcepcion/artisan" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
-                  <MDBCard className="card-hover" style={{ height: '45vh' }}>
-                    <MDBCardBody style={{ color: '#333' }}>
-                      <MDBCardTitle style={{ fontSize: '1.7em', marginBottom: '0' }}> ARTISAN </MDBCardTitle>
-                      <p className="mb-1">
-                        Network Simulator Mobile Application
-                        <span style={{ width: '10px', height: '10px', backgroundColor: '#fddc5c', borderRadius: '50%', display: 'inline-block', marginLeft: '7px'}}></span>
-                      </p>
-                      <span style={{fontSize: '1em', opacity: '0.5', fontStyle: 'italic'}}> {'<links to the github repository>'} </span>
-                      <MDBCardImage src={artisanImage} className="img-fluid" style={{ objectFit: "contain", width: "90%", height: "90%" }} />
-                    </MDBCardBody>
-                  </MDBCard>
-                </a>
-              </MDBCol>
-
-              <MDBCol md="5" className="text-center">
-                  <MDBCard className="card-hover" style={{ height: '45vh' }}>
-                    <MDBCardBody>
-                      <MDBCardTitle style={{ fontSize: '1.7em', marginBottom: '0' }}> ICS CMS </MDBCardTitle>
-                      <p className="mb-1">
-                        ICS Clearance Management System Website
-                        <span style={{ width: '10px', height: '10px', backgroundColor: '#39e75f', borderRadius: '50%', display: 'inline-block', marginLeft: '7px'}}></span>
-                      </p>
-                      <MDBCardImage src={icsmsImage} className="img-fluid" style={{ objectFit: "contain", width: "90%", height: "90%" }} />
-                    </MDBCardBody>
-                  </MDBCard>
-              </MDBCol>
-
-              <MDBCol md="3" className="text-center">
-                  <MDBCard className="card-hover" style={{ height: '45vh' }}>
-                    <MDBCardBody>
-                      <MDBCardTitle style={{ fontSize: '1.7em', marginBottom: '0' }}> HealthMon </MDBCardTitle>
-                      <p className="mb-1">
-                        Health Monitoring Mobile Application
-                        <span style={{ width: '10px', height: '10px', backgroundColor: '#39e75f', borderRadius: '50%', display: 'inline-block', marginLeft: '7px'}}></span>
-                      </p>
-                      <MDBCardImage src={healthmonImage} className="img-fluid" style={{ objectFit: "contain", width: "90%", height: "90%" }} />
-                    </MDBCardBody>
-                  </MDBCard>
-              </MDBCol>
-            </MDBRow>
-
-            <MDBRow className="mt-4">
-              <MDBCol md="3" className="text-center">
-              <MDBCard className="card-hover" style={{ height: '65vh' }}>
-                  <MDBCardBody>
-                    <MDBCardTitle style={{ fontSize: '1.7em', marginBottom: '0' }}> Cardboard Voyage </MDBCardTitle>
-                    <p className="mb-1">
-                      Turn-based RPG Mobile Game
-                      <span style={{ width: '10px', height: '10px', backgroundColor: '#fddc5c', borderRadius: '50%', display: 'inline-block', marginLeft: '7px'}}></span>
-                    </p>
-                    <MDBCardImage src={cardboardvoyageImage} className="img-fluid" style={{ objectFit: "contain", width: "90%", height: "90%" }} />
-                  </MDBCardBody>
-                </MDBCard>
-              </MDBCol>
-
-              <MDBCol md="3" className="text-center">
-                <a href="https://expo.dev/preview/update?message=Fix%20SDK%20issue&updateRuntimeVersion=1.0.0&createdAt=2025-03-26T10%3A18%3A30.706Z&slug=exp&projectId=1803f557-182b-4193-a1ce-7b1f53b2968f&group=94e01bfb-47dc-4bb6-bd40-9fb2ecb5aed7" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
-                  <MDBCard className="card-hover" style={{ height: '65vh' }}>
-                   <MDBCardBody style={{ color: '#333' }}> 
-                      <MDBCardTitle style={{ fontSize: '1.7em', marginBottom: '0' }}> First Raiders </MDBCardTitle>
-                      <p className="mb-1">
-                        First Aid Response Mobile App
-                        <span style={{ width: '10px', height: '10px', backgroundColor: '#39e75f', borderRadius: '50%', display: 'inline-block', marginLeft: '7px'}}></span>
-                      </p>
-                      <span style={{fontSize: '1em', opacity: '0.5', fontStyle: 'italic'}}> {'<links to qr download>'} </span>
-                      <MDBCardImage src={firstraiderImage} className="img-fluid" style={{ objectFit: "contain", width: "90%", height: "90%" }} />
-                    </MDBCardBody>
-                  </MDBCard>
-                </a>
-              </MDBCol>
-            </MDBRow>
+      <MDBCard className="border mb-3">
+        <MDBCardBody> 
+          <MDBRow className="g-4">
+            <MDBCol md="5">
+              <MDBCardImage src={firstraiderImage} alt="Card image" fluid className="rounded h-100" style={{objectFit: 'contain'}}/>
+            </MDBCol>
+            <MDBCol md="7">
+              <MDBCardBody className="text-start">
+                {ProjectCard(
+                  "FirstRaider",
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                  true, "mobile application", "freelance project"
+                )}
+                <div className="mt-3"/>
+                <a href="https://expo.dev/preview/update?message=Fix%20SDK%20issue&updateRuntimeVersion=1.0.0&createdAt=2025-03-26T10%3A18%3A30.706Z&slug=exp&projectId=1803f557-182b-4193-a1ce-7b1f53b2968f&group=94e01bfb-47dc-4bb6-bd40-9fb2ecb5aed7" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}> Click here to view downloadable qr code </a>        
+              </MDBCardBody>
+            </MDBCol>
+          </MDBRow>
+        </MDBCardBody>
+      </MDBCard>
 
 
-              
-          </MDBCol>
-        </MDBRow>
+      <MDBCard className="border mb-3">
+        <MDBCardBody> 
+          <MDBRow className="g-4">
+            <MDBCol md="5">
+              <MDBCardImage src={icsmsImage} alt="Card image" fluid className="rounded h-100" style={{objectFit: 'contain'}}/>
+            </MDBCol>
+            <MDBCol md="7">
+              <MDBCardBody className="text-start">
+                {ProjectCard(
+                  "ICS Clearance Management System Website",
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                  true, "website", "school activity"
+                )}
+              </MDBCardBody>
+            </MDBCol>
+          </MDBRow>
+        </MDBCardBody>
+      </MDBCard>
+
+
+      <MDBCard className="border mb-3">
+        <MDBCardBody> 
+          <MDBRow className="g-4">
+            <MDBCol md="5">
+              <MDBCardImage src={healthmonImage} alt="Card image" fluid className="rounded h-100" style={{objectFit: 'contain'}}/>
+            </MDBCol>
+            <MDBCol md="7">
+              <MDBCardBody className="text-start">
+                {ProjectCard(
+                  "HealthMon: Health Monitoring Mobile Application",
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                  true, "mobile application", "school activity"
+                )}
+              </MDBCardBody>
+            </MDBCol>
+          </MDBRow>
+        </MDBCardBody>
+      </MDBCard>
+
+    
     </MDBCard>
   );
 }
-
-
-
 
 
 
@@ -315,7 +396,7 @@ function App() {
 
   return (
     <div className="d-flex flex-column min-vh-100 p-2">
-      {/* Header */}
+
       <MDBContainer fluid className="d-flex justify-content-between align-items-center py-2">
         <div>
           <img
@@ -325,9 +406,8 @@ function App() {
           />
         </div>
 
-        {/* Right-side nav */}
         <div className="ms-auto">
-          <MDBNavbarNav className="d-flex flex-row" style={{ fontSize: "1.1em" }}>
+          <MDBNavbarNav className="d-flex flex-row nav-items">
             <MDBNavbarItem className="me-4">
               <MDBNavbarLink
                 className={activeTab === "home" ? "active-tab-home" : ""}
@@ -368,7 +448,6 @@ function App() {
         </div>
       </MDBContainer>
 
-      {/* Main Content */}
       <div style={{ flex: 1, position: "relative", minHeight: "0" }}>{renderCard()}</div>
     </div>
   );
