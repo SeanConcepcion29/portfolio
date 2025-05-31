@@ -36,7 +36,7 @@ import flutterImage from "./images/flutter.png";
 
 import artisanImage from "./images/artisan.png";
 import bricsImage from "./images/brics.png";
-import cardboardvoyageImage from "./images/cardboard_voyage.png";
+import tetwImage from "./images/tetw.png";
 import travelwheelsImage from "./images/travelwheels.png";
 import healthmonImage from "./images/healthmon.png";
 import icsmsImage from "./images/icsms.png";
@@ -47,7 +47,7 @@ import boatsImage from "./images/boats.png";
 function ProjectCard(title, desc, done, type, purpose) {
 
   const doneColor = done ? '#C4D498' : '#FECE52'; 
-  const typeColor = type === 'mobile application' ? '#83E2DA' : type === 'website' ? '#F376A0' : '#BFBFBF';
+  const typeColor = type === 'mobile application' ? '#83E2DA' : type === 'website' ? '#BC8CE0' : type === '2d video game' ? '#F376A0' : '#BFBFBF';
   const purposeColor = purpose === 'school activity' ? '#FFA039' : purpose === 'personal project' ? '#BC8CE0' : purpose === 'freelance project' ? '#3FCFFD' : '#BFBFBF';
 
   return (
@@ -266,7 +266,7 @@ function Project() {
               <MDBCardBody className="text-start">
                 {ProjectCard(
                   "TravelWheels",
-                  "Travel Tayo Car Rental and Tours is a private owned business, located at Unit 2, 2nd Flr, Hersyl Building, Blk 5 Lot 25 Ph4 Golden City Subdivision, Brgy. Dita, Sta Rosa, Laguna. Founded on October 2015, the company has projected revenues and started to establish its name and connections in the local market. It foresees potentials and has expanded the range of services vigorously.",
+                  "TravelWheels is a freelance website project that offers user-friendly process and transcations for booking, rentals, and other various services. This system includes chatbot and admin-user account type among many other features.",
                   true, "website", "freelance project"
                 )}
                 <div className="mt-3"/>
@@ -288,7 +288,7 @@ function Project() {
               <MDBCardBody className="text-start">
                 {ProjectCard(
                   "BOATS (Boat in Ocean: Animation and Terrain Simulation",
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                  "Boat in Ocean - Animation and Terrain Simulation” or “BOATS” is an interactive simulation highlighting WebGL capabilities to render animations and objects.",
                   false, "website", "school activity"
                 )}
                 <div className="mt-3"/>
@@ -309,7 +309,7 @@ function Project() {
               <MDBCardBody className="text-start">
                 {ProjectCard(
                   "FirstRaider",
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                  "First Raider is a freelance mobile application prototype that works for Android and IOS designed to improve first aid response through a grab-like system which allows nearby respondents to attend to the emergency quickly.",
                   true, "mobile application", "freelance project"
                 )}
                 <div className="mt-3"/>
@@ -325,14 +325,14 @@ function Project() {
         <MDBCardBody> 
           <MDBRow className="g-4">
             <MDBCol md="5">
-              <MDBCardImage src={icsmsImage} alt="Card image" fluid className="rounded h-100" style={{objectFit: 'contain'}}/>
+              <MDBCardImage src={tetwImage} alt="Card image" fluid className="rounded h-100" style={{objectFit: 'contain'}}/>
             </MDBCol>
             <MDBCol md="7">
               <MDBCardBody className="text-start">
                 {ProjectCard(
-                  "ICS Clearance Management System Website",
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                  true, "website", "school activity"
+                  "The Election That Wasn't",
+                  "The Election That Wasn't or TETW is a personal project on a 2D side-scroller puzzle game made using personally drawn assets and Godot Engine. It follow the story of a reporter investigating a peculiar election process on a secluded village where the protagonist must navigate through the area and use the environment to solve puzzles and escape the eldtrich horror that lies within.",
+                  false, "2d video game", "personal project"
                 )}
               </MDBCardBody>
             </MDBCol>
@@ -351,9 +351,32 @@ function Project() {
               <MDBCardBody className="text-start">
                 {ProjectCard(
                   "HealthMon: Health Monitoring Mobile Application",
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                  "HealthMon is a health monitoring system application created using the Flutter framework which is connected to a Firebase Cloud Firestore for database and Firebase Authentication for the login and signup features.",
                   true, "mobile application", "school activity"
                 )}
+                <div className="mt-3"/>
+                <a href="https://github.com/SKIConcepcion/healthmon" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}> Click here to visit Github repository </a>        
+              </MDBCardBody>
+            </MDBCol>
+          </MDBRow>
+        </MDBCardBody>
+      </MDBCard>
+
+            <MDBCard className="border mb-3">
+        <MDBCardBody> 
+          <MDBRow className="g-4">
+            <MDBCol md="5">
+              <MDBCardImage src={icsmsImage} alt="Card image" fluid className="rounded h-100" style={{objectFit: 'contain'}}/>
+            </MDBCol>
+            <MDBCol md="7">
+              <MDBCardBody className="text-start">
+                {ProjectCard(
+                  "ICS Clearance Management System Website",
+                  "ICSMS is a website for clearance management system which features an admin-approver-user account system for better handling of accounts, clearances, and documents.",
+                  true, "website", "school activity"
+                )}
+                <div className="mt-3"/>
+                <a href="https://github.com/SKIConcepcion/icscms" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}> Click here to visit Github repository </a>
               </MDBCardBody>
             </MDBCol>
           </MDBRow>
