@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.ef49533b.css",
-    "main.js": "/portfolio/static/js/main.f96b1e45.js",
+    "main.js": "/portfolio/static/js/main.5c4bc298.js",
     "static/media/travelwheels.png": "/portfolio/static/media/travelwheels.97979649eee5e6b8617e.png",
     "static/media/firstraider.png": "/portfolio/static/media/firstraider.28fdedc447b23a6ad39f.png",
     "static/media/timeline.png": "/portfolio/static/media/timeline.4dc6f3c0ebe2d2de6468.png",
     "static/media/brics.png": "/portfolio/static/media/brics.4626c48fe3f7d60999e9.png",
     "static/media/healthmon.png": "/portfolio/static/media/healthmon.5901ec375313220f05b5.png",
-    "static/media/tetw.png": "/portfolio/static/media/tetw.2cb0c3e31b2dd0cffeb3.png",
     "static/media/boats.png": "/portfolio/static/media/boats.2590a7463093bbc867bc.png",
+    "static/media/tetw-alt.png": "/portfolio/static/media/tetw-alt.d2c9a9ecb17d5593b149.png",
     "static/media/title.png": "/portfolio/static/media/title.a49eb79303b410005f24.png",
     "static/media/tech-title.png": "/portfolio/static/media/tech-title.c21cbb6116588b4358c5.png",
     "static/media/icsms.png": "/portfolio/static/media/icsms.77a15b00203f60dec30e.png",
@@ -19,10 +19,10 @@
     "static/media/logo.png": "/portfolio/static/media/logo.65dd7bd903071e12424d.png",
     "index.html": "/portfolio/index.html",
     "main.ef49533b.css.map": "/portfolio/static/css/main.ef49533b.css.map",
-    "main.f96b1e45.js.map": "/portfolio/static/js/main.f96b1e45.js.map"
+    "main.5c4bc298.js.map": "/portfolio/static/js/main.5c4bc298.js.map"
   },
   "entrypoints": [
     "static/css/main.ef49533b.css",
-    "static/js/main.f96b1e45.js"
+    "static/js/main.5c4bc298.js"
   ]
 }
