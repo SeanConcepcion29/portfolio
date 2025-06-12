@@ -36,7 +36,7 @@ import flutterImage from "./images/flutter.png";
 
 import artisanImage from "./images/artisan.png";
 import bricsImage from "./images/brics.png";
-import tetwImage from "./images/tetw.png";
+import tetwImage from "./images/tetw-alt.png";
 import travelwheelsImage from "./images/travelwheels.png";
 import healthmonImage from "./images/healthmon.png";
 import icsmsImage from "./images/icsms.png";
@@ -289,7 +289,7 @@ function Project() {
                 {ProjectCard(
                   "BOATS (Boat in Ocean: Animation and Terrain Simulation",
                   "Boat in Ocean - Animation and Terrain Simulation” or “BOATS” is an interactive simulation highlighting WebGL capabilities to render animations and objects.",
-                  false, "website", "school activity"
+                  true, "website", "school activity"
                 )}
                 <div className="mt-3"/>
                 <a href="https://seanconcepcion29.github.io/CMSC-161-BOATS/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}> Click here to visit website </a>
@@ -335,6 +335,8 @@ function Project() {
                   false, "2d video game", "personal project"
                 )}
               </MDBCardBody>
+              <div className="mt-3"/>
+              <a href="https://drive.google.com/drive/folders/1apGisbvn0EcNz5H45h7TBKcS0pOKJ2N3?usp=sharing" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}> Click here to view downloadable apk </a>
             </MDBCol>
           </MDBRow>
         </MDBCardBody>
