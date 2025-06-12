@@ -334,9 +334,9 @@ function Project() {
                   "The Election That Wasn't or TETW is a personal project on a 2D side-scroller puzzle game made using personally drawn assets and Godot Engine. It follow the story of a reporter investigating a peculiar election process on a secluded village where the protagonist must navigate through the area and use the environment to solve puzzles and escape the eldtrich horror that lies within.",
                   false, "2d video game", "personal project"
                 )}
-              </MDBCardBody>
               <div className="mt-3"/>
               <a href="https://drive.google.com/drive/folders/1apGisbvn0EcNz5H45h7TBKcS0pOKJ2N3?usp=sharing" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}> Click here to view downloadable apk </a>
+              </MDBCardBody>
             </MDBCol>
           </MDBRow>
         </MDBCardBody>
