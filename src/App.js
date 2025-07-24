@@ -35,8 +35,9 @@ import pythonImage from "./images/python.png";
 import flutterImage from "./images/flutter.png";
 
 import artisanImage from "./images/artisan.png";
+import noahImage from "./images/noah-alt.png";
 import bricsImage from "./images/brics.png";
-import tetwImage from "./images/tetw-alt.png";
+import ncnpImage from "./images/ncnp.png";
 import travelwheelsImage from "./images/travelwheels.png";
 import healthmonImage from "./images/healthmon.png";
 import icsmsImage from "./images/icsms.png";
@@ -47,8 +48,25 @@ import boatsImage from "./images/boats.png";
 function ProjectCard(title, desc, done, type, purpose) {
 
   const doneColor = done ? '#C4D498' : '#FECE52'; 
-  const typeColor = type === 'mobile application' ? '#83E2DA' : type === 'website' ? '#BC8CE0' : type === '2d video game' ? '#F376A0' : '#BFBFBF';
-  const purposeColor = purpose === 'school activity' ? '#FFA039' : purpose === 'personal project' ? '#BC8CE0' : purpose === 'freelance project' ? '#3FCFFD' : '#BFBFBF';
+
+  const typeColor = type === 'mobile application'
+  ? '#83E2DA'
+  : type === 'website'
+  ? '#BC8CE0'
+  : type === '2d video game'
+  ? '#F376A0'
+  : '#BFBFBF';
+
+  const purposeColor = purpose === 'school activity' 
+  ? '#FFA039' 
+  : purpose === 'personal project' 
+  ? '#BC8CE0' 
+  : purpose === 'freelance project' 
+  ? '#3FCFFD' 
+  : purpose === 'internship project' 
+  ? '#7ED957' 
+  : '#BFBFBF';
+
 
   return (
     <div>
@@ -232,7 +250,29 @@ function Project() {
       <div className="d-flex justify-content-center mb-4">
         <img src={projectTitle} style={{height: "auto", width: "50vw", maxWidth: '300px'}} className="p-2 text-center"/>
       </div>
-      
+
+
+      <MDBCard className="border mb-3">
+        <MDBCardBody> 
+          <MDBRow className="g-4">
+            <MDBCol md="5">
+              <MDBCardImage src={noahImage} alt="Card image" fluid className="rounded h-100" style={{objectFit: 'contain'}}/>
+            </MDBCol>
+            <MDBCol md="7">
+              <MDBCardBody className="text-start">
+                {ProjectCard(
+                  "Nationwide Operational Assessment of Hazards (Project NOAH)",
+                  "Project NOAH is the Philippines'  primary disaster risk reduction and management program, managed by UP and formerly led by DOST from 2012 to 2017. My contribution here as an intern focuses on backend development for the data extraction component of the typhoon tracker feature.",
+                  true, "website", "internship project"
+                )}
+                <div className="mt-3"/>
+                <a href="https://noah.up.edu.ph/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}> Click here to visit website </a>
+              </MDBCardBody>
+            </MDBCol>
+          </MDBRow>
+        </MDBCardBody>
+      </MDBCard>
+
 
       <MDBCard className="border mb-3">
         <MDBCardBody> 
@@ -277,6 +317,26 @@ function Project() {
         </MDBCardBody>
       </MDBCard>
       
+      <MDBCard className="border mb-3">
+        <MDBCardBody> 
+          <MDBRow className="g-4">
+            <MDBCol md="5">
+              <MDBCardImage src={ncnpImage} alt="Card image" fluid className="rounded h-100" style={{objectFit: 'contain'}}/>
+            </MDBCol>
+            <MDBCol md="7">
+              <MDBCardBody className="text-start">
+                {ProjectCard(
+                  "Nor Crying, Nor Pain",
+                  "Nor Crying, Nor Pain or NCNP is a personal project on a 2D side-scroller puzzle game made using personally drawn assets and Godot Engine. It follow the story of a reporter investigating a peculiar election process on a secluded village where the protagonist must navigate through the area and use the environment to solve puzzles and escape the eldtrich horror that lies within.",
+                  false, "2d video game", "personal project"
+                )}
+              <div className="mt-3"/>
+              <a href="https://drive.google.com/drive/folders/1apGisbvn0EcNz5H45h7TBKcS0pOKJ2N3?usp=sharing" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}> Click here to view downloadable apk </a>
+              </MDBCardBody>
+            </MDBCol>
+          </MDBRow>
+        </MDBCardBody>
+      </MDBCard>
 
       <MDBCard className="border mb-3">
         <MDBCardBody> 
@@ -287,7 +347,7 @@ function Project() {
             <MDBCol md="7">
               <MDBCardBody className="text-start">
                 {ProjectCard(
-                  "BOATS (Boat in Ocean: Animation and Terrain Simulation",
+                  "BOATS (Boat in Ocean: Animation and Terrain Simulation)",
                   "Boat in Ocean - Animation and Terrain Simulation” or “BOATS” is an interactive simulation highlighting WebGL capabilities to render animations and objects.",
                   true, "website", "school activity"
                 )}
@@ -319,29 +379,6 @@ function Project() {
           </MDBRow>
         </MDBCardBody>
       </MDBCard>
-
-
-      <MDBCard className="border mb-3">
-        <MDBCardBody> 
-          <MDBRow className="g-4">
-            <MDBCol md="5">
-              <MDBCardImage src={tetwImage} alt="Card image" fluid className="rounded h-100" style={{objectFit: 'contain'}}/>
-            </MDBCol>
-            <MDBCol md="7">
-              <MDBCardBody className="text-start">
-                {ProjectCard(
-                  "The Election That Wasn't",
-                  "The Election That Wasn't or TETW is a personal project on a 2D side-scroller puzzle game made using personally drawn assets and Godot Engine. It follow the story of a reporter investigating a peculiar election process on a secluded village where the protagonist must navigate through the area and use the environment to solve puzzles and escape the eldtrich horror that lies within.",
-                  false, "2d video game", "personal project"
-                )}
-              <div className="mt-3"/>
-              <a href="https://drive.google.com/drive/folders/1apGisbvn0EcNz5H45h7TBKcS0pOKJ2N3?usp=sharing" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}> Click here to view downloadable apk </a>
-              </MDBCardBody>
-            </MDBCol>
-          </MDBRow>
-        </MDBCardBody>
-      </MDBCard>
-
 
       <MDBCard className="border mb-3">
         <MDBCardBody> 
