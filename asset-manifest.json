@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.ef49533b.css",
-    "main.js": "/portfolio/static/js/main.af57882d.js",
+    "main.css": "/portfolio/static/css/main.593bdd14.css",
+    "main.js": "/portfolio/static/js/main.6c0ff1d4.js",
+    "static/media/art_casanaan.png": "/portfolio/static/media/art_casanaan.2bd1f8b4da2809f91a3b.png",
     "static/media/travelwheels.png": "/portfolio/static/media/travelwheels.97979649eee5e6b8617e.png",
     "static/media/firstraider.png": "/portfolio/static/media/firstraider.28fdedc447b23a6ad39f.png",
     "static/media/timeline.png": "/portfolio/static/media/timeline.ab9cab1453743edb1583.png",
@@ -9,21 +10,26 @@
     "static/media/brics.png": "/portfolio/static/media/brics.4626c48fe3f7d60999e9.png",
     "static/media/healthmon.png": "/portfolio/static/media/healthmon.5901ec375313220f05b5.png",
     "static/media/boats.png": "/portfolio/static/media/boats.221933346afd5d3438ff.png",
+    "static/media/art_deardaisy.jpg": "/portfolio/static/media/art_deardaisy.228adbf1454f53a442d3.jpg",
+    "static/media/ncnp.png": "/portfolio/static/media/ncnp.de2431684e39b2c3798e.png",
     "static/media/artisan.png": "/portfolio/static/media/artisan.8415150d0bec3140cb82.png",
     "static/media/title.png": "/portfolio/static/media/title.a49eb79303b410005f24.png",
-    "static/media/tech-title.png": "/portfolio/static/media/tech-title.c21cbb6116588b4358c5.png",
+    "static/media/proficiency-title.png": "/portfolio/static/media/proficiency-title.d911e96f99bb31525c6e.png",
     "static/media/icsms.png": "/portfolio/static/media/icsms.77a15b00203f60dec30e.png",
     "static/media/about-title.png": "/portfolio/static/media/about-title.fa69fc68cc894748505c.png",
+    "static/media/artwork-title.png": "/portfolio/static/media/artwork-title.6b5be94c605b607413ef.png",
     "static/media/timeline-title.png": "/portfolio/static/media/timeline-title.372b3dcefd9cf00a5bb2.png",
     "static/media/project-title.png": "/portfolio/static/media/project-title.a9ae06002c0626faf04d.png",
+    "static/media/art_entropy.jpg": "/portfolio/static/media/art_entropy.df376e8ef932bd49b3a5.jpg",
+    "static/media/art_mirasol.jpg": "/portfolio/static/media/art_mirasol.e7b523d3e63d8a28694f.jpg",
     "static/media/logo.png": "/portfolio/static/media/logo.65dd7bd903071e12424d.png",
-    "static/media/ncnp.png": "/portfolio/static/media/ncnp.4edf4b8ebfef2238bafe.png",
+    "static/media/art_1314.jpg": "/portfolio/static/media/art_1314.7c392fec8e89bc0a8773.jpg",
     "index.html": "/portfolio/index.html",
-    "main.ef49533b.css.map": "/portfolio/static/css/main.ef49533b.css.map",
-    "main.af57882d.js.map": "/portfolio/static/js/main.af57882d.js.map"
+    "main.593bdd14.css.map": "/portfolio/static/css/main.593bdd14.css.map",
+    "main.6c0ff1d4.js.map": "/portfolio/static/js/main.6c0ff1d4.js.map"
   },
   "entrypoints": [
-    "static/css/main.ef49533b.css",
-    "static/js/main.af57882d.js"
+    "static/css/main.593bdd14.css",
+    "static/js/main.6c0ff1d4.js"
   ]
 }
