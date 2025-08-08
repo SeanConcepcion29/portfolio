@@ -2,7 +2,7 @@ import "mdb-react-ui-kit/dist/css/mdb.min.css";
 import "./App.css";
 
 import { useState } from "react";
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope, FaItchIo } from "react-icons/fa";
 
 import {
   MDBContainer,
@@ -155,6 +155,35 @@ function About() {
         <MDBCol md="4" className="text-start">
           <MDBCardTitle> CONTACTS </MDBCardTitle>
             <MDBCol size="auto" className="d-flex">
+
+              <MDBCol size="auto" className="me-4">
+                <a href="mailto:skiconcepcion@gmail.com" style={{color: '#333'}}>
+                  <FaEnvelope size={35} style={{color: '#333'}}/>
+                </a>
+              </MDBCol>
+
+              <MDBCol size="auto" className="me-4">
+                <a 
+                  href="https://www.linkedin.com/in/sean-concepcion/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  style={{color: '#333'}}
+                >
+                  <FaLinkedin size={35} style={{color: '#333'}}/>
+                </a>
+              </MDBCol>
+
+              <MDBCol size="auto" className="me-4">
+                <a 
+                  href="https://skiconcepcion.itch.io/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  style={{color: '#333'}}
+                >
+                  <FaItchIo size={35} style={{color: '#333'}}/>
+                </a>
+              </MDBCol>
+
               <MDBCol size="auto" className="me-4">
                 <a 
                   href="https://github.com/SeanConcepcion29" 
@@ -163,7 +192,7 @@ function About() {
                   className="d-flex align-items-center gap-2 text-decoration-none"
                   style={{color: '#333'}}
                 >
-                  <FaGithub size={25} style={{color: '#333'}}/>
+                  <FaGithub size={35} style={{color: '#333'}}/>
                   <p className="m-0" style={{color: '#333'}}>school</p>
                 </a>
               </MDBCol>
@@ -176,27 +205,11 @@ function About() {
                   className="d-flex align-items-center gap-2 text-decoration-none"
                   style={{color: '#333'}}
                 >
-                  <FaGithub size={25} style={{color: '#333'}}/>
+                  <FaGithub size={35} style={{color: '#333'}}/>
                   <p className="m-0" style={{color: '#333'}}>professional</p>
                 </a>
               </MDBCol>
 
-              <MDBCol size="auto" className="me-4">
-                <a 
-                  href="https://www.linkedin.com/in/sean-concepcion-00594430b/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  style={{color: '#333'}}
-                >
-                  <FaLinkedin size={25} style={{color: '#333'}}/>
-                </a>
-              </MDBCol>
-
-              <MDBCol size="auto" className="me-0">
-                <a href="mailto:skiconcepcion@gmail.com" style={{color: '#333'}}>
-                  <FaEnvelope size={25} style={{color: '#333'}}/>
-                </a>
-              </MDBCol>
             </MDBCol>
           </MDBCol>
       </MDBRow>
@@ -331,7 +344,7 @@ function Project() {
                   false, "2d video game", "personal project"
                 )}
               <div className="mt-3"/>
-              <a href="https://drive.google.com/drive/folders/1apGisbvn0EcNz5H45h7TBKcS0pOKJ2N3?usp=sharing" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}> Click here to view downloadable apk </a>
+              <a href="https://skiconcepcion.itch.io/nor-crying-nor-pain" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}> Click here to visit itch.io page </a>
               </MDBCardBody>
             </MDBCol>
           </MDBRow>
