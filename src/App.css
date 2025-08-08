@@ -34,14 +34,46 @@ html {
     color: #FECF56;
 }
 
+.active-tab-artwork {
+    border-bottom: 3px solid #F376A0; 
+    color: #F376A0;
+}
+
 .active-tab-resume {
-    border-bottom: 3px solid #FD4C83; 
-    color: #FD4C83;
+    border-bottom: 3px solid #BFBFBF; 
+    color: #BFBFBF;
 }
   
 .MDBNavbarLink {
     transition: border-bottom 0.3s ease, color 0.3s ease;
 }
+
+
+
+
+.art-image-wrapper {
+  position: relative;
+  height: 100%;
+}
+
+.art-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+.art-image-wrapper:hover .art-overlay {
+  opacity: 1;
+}
+
+
 
 
   

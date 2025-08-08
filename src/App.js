@@ -20,9 +20,10 @@ import {
 import logoImage from './images/logo.png'
 import titleImage from './images/title.png'
 import aboutTitle from './images/about-title.png'
-import techTitle from './images/tech-title.png'
+import proficiencyTitle from './images/proficiency-title.png'
 import projectTitle from './images/project-title.png'
 import timelineTitle from './images/timeline-title.png'
+import artworkTitle from './images/artwork-title.png'
 import timeline from './images/timeline.png'
 
 import mongodbImage from "./images/mongodb.png";
@@ -43,6 +44,40 @@ import healthmonImage from "./images/healthmon.png";
 import icsmsImage from "./images/icsms.png";
 import firstraiderImage from "./images/firstraider.png";
 import boatsImage from "./images/boats.png";
+
+import artOne from "./images/art_entropy.jpg";
+import artTwo from "./images/art_mirasol.jpg";
+import artThree from "./images/art_1314.jpg";
+import artFour from "./images/art_deardaisy.jpg";
+import artFive from "./images/art_casanaan.png";
+
+
+function ArtCard({ src, title, desc, cred="", colProps = {} }) {
+  return (
+    <MDBCol {...colProps}>
+      <MDBCard className="border h-100 mb-4 overflow-hidden position-relative" style={{ borderRadius: "3%" }}>
+        <div className="art-image-wrapper position-relative w-100 h-100">
+          <MDBCardImage
+            src={src}
+            alt="Art image"
+            fluid
+            className="w-100 h-100"
+            style={{ objectFit: "cover" }}
+          />
+          
+          {/* Overlay on hover */}
+          <div className="art-overlay d-flex flex-column justify-content-center align-items-center text-white text-center p-2">
+            <h3 className="">{title}</h3>
+            <p className="mb-3" style={{fontSize: '16px'}}>{desc}</p>
+            <p className="mb-0" style={{fontSize: '12px', fontStyle: 'italic'}}>{cred}</p>
+          </div>
+        </div>
+      </MDBCard>
+    </MDBCol>
+  );
+}
+
+
 
 
 function ProjectCard(title, desc, done, type, purpose) {
@@ -217,7 +252,7 @@ function About() {
 
       <MDBRow className="mt-2 g-4">
         <MDBCol md="4" className="text-start">
-          <img src={techTitle} style={{ height: "auto", width: "50vw", maxWidth: '300px' }} className="p-2" />
+          <img src={proficiencyTitle} style={{ height: "auto", width: "50vw", maxWidth: '300px' }} className="p-2" />
           
           <MDBRow className="mt-4">
             {[
@@ -414,7 +449,7 @@ function Project() {
         </MDBCardBody>
       </MDBCard>
 
-            <MDBCard className="border mb-3">
+      <MDBCard className="border mb-3">
         <MDBCardBody> 
           <MDBRow className="g-4">
             <MDBCol md="5">
@@ -441,13 +476,45 @@ function Project() {
 }
 
 
+function Artwork() {
+  return (
+    <MDBCard
+      style={{ border: "none", boxShadow: "none", overflow: "hidden", color: "#333" }}
+      className="mt-3"
+    >
+      <div className="d-flex justify-content-center mb-4">
+        <img
+          src={artworkTitle}
+          style={{ height: "auto", width: "55vw", maxWidth: "350px" }}
+          className="p-2 text-center"
+        />
+      </div>
+
+      <MDBRow className="g-4">
+        <MDBCol md="4">
+          <ArtCard src={artOne} title="Entropy" desc="gradual decline into disorder" />
+        </MDBCol>
+
+        <MDBCol md="4">
+          <MDBRow className="g-4 mb-4">
+            <ArtCard src={artTwo} title="Mirasol" desc="padayon, iska" cred="background image by todd kent on Unsplash" colProps={{ md: "6" }} />
+          </MDBRow>
+          <ArtCard src={artThree} title="13, 14" desc="just somebody that i used to know" colProps={{ md: "8" }} />
+        </MDBCol>
+      </MDBRow>
+    </MDBCard>
+  );
+}
+
+
+
 
 function Resume() {
   return (
     <MDBCard style={{ border: "none", boxShadow: "none" }}>
       <MDBCardBody>
         <MDBCardTitle>
-        Resume
+          Resume
         </MDBCardTitle>
       </MDBCardBody>
     </MDBCard>
@@ -463,7 +530,8 @@ function App() {
     switch (activeTab) {
       case "home": return (Home());
       case "about": return (About()); 
-      case "project": return (Project()); 
+      case "project": return (Project());
+      case "artwork": return (Artwork()); 
       case "resume": return (Resume()); 
       default: return null;
     }
@@ -507,7 +575,16 @@ function App() {
                 active={activeTab === "project"}
                 onClick={() => setActiveTab("project")}
               >
-                project
+                projects
+              </MDBNavbarLink>
+            </MDBNavbarItem>
+            <MDBNavbarItem className="me-4">
+              <MDBNavbarLink
+                className={activeTab === "artwork" ? "active-tab-artwork" : ""}
+                active={activeTab === "artwork"}
+                onClick={() => setActiveTab("artwork")}
+              >
+                artworks
               </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem className="me-2">
