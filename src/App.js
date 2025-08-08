@@ -587,6 +587,8 @@ function App() {
                 artworks
               </MDBNavbarLink>
             </MDBNavbarItem>
+
+            {/*
             <MDBNavbarItem className="me-2">
               <MDBNavbarLink
                 className={activeTab === "resume" ? "active-tab-resume" : ""}
@@ -596,6 +598,8 @@ function App() {
                 resume
               </MDBNavbarLink>
             </MDBNavbarItem>
+            */}
+
           </MDBNavbarNav>
         </div>
       </MDBContainer>
