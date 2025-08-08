@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.593bdd14.css",
-    "main.js": "/portfolio/static/js/main.6c0ff1d4.js",
+    "main.js": "/portfolio/static/js/main.e34a46c5.js",
     "static/media/art_casanaan.png": "/portfolio/static/media/art_casanaan.2bd1f8b4da2809f91a3b.png",
     "static/media/travelwheels.png": "/portfolio/static/media/travelwheels.97979649eee5e6b8617e.png",
     "static/media/firstraider.png": "/portfolio/static/media/firstraider.28fdedc447b23a6ad39f.png",
@@ -26,10 +26,10 @@
     "static/media/art_1314.jpg": "/portfolio/static/media/art_1314.7c392fec8e89bc0a8773.jpg",
     "index.html": "/portfolio/index.html",
     "main.593bdd14.css.map": "/portfolio/static/css/main.593bdd14.css.map",
-    "main.6c0ff1d4.js.map": "/portfolio/static/js/main.6c0ff1d4.js.map"
+    "main.e34a46c5.js.map": "/portfolio/static/js/main.e34a46c5.js.map"
   },
   "entrypoints": [
     "static/css/main.593bdd14.css",
-    "static/js/main.6c0ff1d4.js"
+    "static/js/main.e34a46c5.js"
   ]
 }
