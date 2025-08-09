@@ -48,8 +48,7 @@ import boatsImage from "./images/boats.png";
 import artOne from "./images/art_entropy.jpg";
 import artTwo from "./images/art_mirasol.jpg";
 import artThree from "./images/art_1314.jpg";
-import artFour from "./images/art_deardaisy.jpg";
-import artFive from "./images/art_casanaan.png";
+import artFour from "./images/art_self_portrait.png";
 
 
 function ArtCard({ src, title, desc, cred="", colProps = {} }) {
@@ -497,9 +496,10 @@ function Artwork() {
 
         <MDBCol md="4">
           <MDBRow className="g-4 mb-4">
-            <ArtCard src={artTwo} title="Mirasol" desc="padayon, iska" cred="background image by todd kent on Unsplash" colProps={{ md: "6" }} />
+            <ArtCard src={artFour} title="Self Portrait" desc="literally me" colProps={{ md: "6" }} />
+            <ArtCard src={artThree} title="13, 14" desc="just somebody that i used to know" colProps={{ md: "6" }} />
           </MDBRow>
-          <ArtCard src={artThree} title="13, 14" desc="just somebody that i used to know" colProps={{ md: "8" }} />
+          <ArtCard src={artTwo} title="Mirasol" desc="padayon, iska" cred="background image by todd kent on Unsplash" colProps={{ md: "8" }} />
         </MDBCol>
       </MDBRow>
     </MDBCard>
