@@ -353,7 +353,7 @@ function Project() {
               <MDBCardBody className="text-start">
                 {ProjectCard(
                   "ARTISAN",
-                  "ARTISAN is a mobile application for simulating and visualizing computer networks which seeks to provide better accessibility to networking tools that were once bound to desktops only.",
+                  "ARTISAN (Accessible Routing and Topology Interactive Simulation for Applied Networking) is a mobile application for simulating and visualizing computer networks which seeks to provide better accessibility to networking tools that were once bound to desktops only.",
                   false, "mobile application", "school activity"
                 )}
                 <div className="mt-3"/>
