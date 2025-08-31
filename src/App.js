@@ -39,6 +39,7 @@ import artisanImage from "./images/artisan.png";
 import noahImage from "./images/noah-alt.png";
 import bricsImage from "./images/brics.png";
 import ncnpImage from "./images/ncnp.png";
+import sayolunaImage from "./images/sayo-luna.png";
 import travelwheelsImage from "./images/travelwheels.png";
 import healthmonImage from "./images/healthmon.png";
 import icsmsImage from "./images/icsms.png";
@@ -375,7 +376,7 @@ function Project() {
                 {ProjectCard(
                   "Nor Crying, Nor Pain",
                   "Nor Crying, Nor Pain or NCNP is a personal project on a 2D side-scroller puzzle game made using personally drawn assets and Godot Engine. It follow the story of a reporter investigating a peculiar election process on a secluded village where the protagonist must navigate through the area and use the environment to solve puzzles and escape the eldtrich horror that lies within.",
-                  false, "2d video game", "personal project"
+                  true, "2d video game", "personal project"
                 )}
               <div className="mt-3"/>
               <a href="https://skiconcepcion.itch.io/nor-crying-nor-pain" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}> Click here to visit itch.io page </a>
@@ -400,6 +401,27 @@ function Project() {
                 )}
                 <div className="mt-3"/>
                 <a href="https://seanconcepcion29.github.io/CMSC-161-BOATS/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}> Click here to visit website </a>
+              </MDBCardBody>
+            </MDBCol>
+          </MDBRow>
+        </MDBCardBody>
+      </MDBCard>
+
+      <MDBCard className="border mb-3">
+        <MDBCardBody> 
+          <MDBRow className="g-4">
+            <MDBCol md="5">
+              <MDBCardImage src={sayolunaImage} alt="Card image" fluid className="rounded h-100" style={{objectFit: 'contain'}}/>
+            </MDBCol>
+            <MDBCol md="7">
+              <MDBCardBody className="text-start">
+                {ProjectCard(
+                  "Sa 'yo, Luna",
+                  "Sa 'yo, Luna is a personal project for a 2D puzzle-exploration short game (about 15 to 30 minutes of gameplay), created using personally drawn assets and the Godot Engine. This is a heartfelt letter the follows the story of two lovers told from one perspective.",
+                  true, "2d video game", "personal project"
+                )}
+              <div className="mt-3"/>
+              <a href="https://skiconcepcion.itch.io/sayo-luna" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}> Click here to visit itch.io page </a>
               </MDBCardBody>
             </MDBCol>
           </MDBRow>
