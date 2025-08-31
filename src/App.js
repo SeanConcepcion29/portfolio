@@ -343,6 +343,26 @@ function Project() {
         </MDBCardBody>
       </MDBCard>
 
+      <MDBCard className="border mb-3">
+        <MDBCardBody> 
+          <MDBRow className="g-4">
+            <MDBCol md="5">
+              <MDBCardImage src={artisanImage} alt="Card image" fluid className="rounded h-100" style={{objectFit: 'contain'}}/>
+            </MDBCol>
+            <MDBCol md="7">
+              <MDBCardBody className="text-start">
+                {ProjectCard(
+                  "ARTISAN",
+                  "ARTISAN is a mobile application for simulating and visualizing computer networks which seeks to provide better accessibility to networking tools that were once bound to desktops only.",
+                  false, "mobile application", "school activity"
+                )}
+                <div className="mt-3"/>
+                <a href="https://github.com/SeanConcepcion29/artisan" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}> Click here to visit Github repository </a>
+              </MDBCardBody>
+            </MDBCol>
+          </MDBRow>
+        </MDBCardBody>
+      </MDBCard>
 
       <MDBCard className="border mb-3">
         <MDBCardBody> 
