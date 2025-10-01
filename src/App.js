@@ -17,7 +17,7 @@ import {
   MDBRow
 } from "mdb-react-ui-kit";
 
-import logoImage from './images/logo.png'
+import logoImage from './images/logo_alt.png'
 import titleImage from './images/title.png'
 import aboutTitle from './images/about-title.png'
 import proficiencyTitle from './images/proficiency-title.png'
@@ -34,10 +34,12 @@ import reactjsImage from "./images/reactjs.png";
 import kotlinImage from "./images/kotlin.jpg";
 import pythonImage from "./images/python.png";
 import flutterImage from "./images/flutter.png";
+import dartImage from "./images/dart.png";
 
 import artisanImage from "./images/artisan.png";
 import noahImage from "./images/noah-alt.png";
 import bricsImage from "./images/brics.png";
+import mbmbImage from "./images/mbmb.png";
 import ncnpImage from "./images/ncnp.png";
 import sayolunaImage from "./images/sayo-luna.png";
 import travelwheelsImage from "./images/travelwheels.png";
@@ -250,7 +252,7 @@ function About() {
       </MDBRow>
       
 
-      <MDBRow className="mt-2 g-4">
+      <MDBRow className="mt-2 g-5">
         <MDBCol md="4" className="text-start">
           <img src={proficiencyTitle} style={{ height: "auto", width: "50vw", maxWidth: '300px' }} className="p-2" />
           
@@ -264,6 +266,7 @@ function About() {
               pythonImage,
               flutterImage,
               mongodbImage,
+              dartImage
             ].map((imgSrc, index) => (
               <MDBCol size="4" className="p-2 d-flex justify-content-center" key={index}>
                 <MDBCardImage
@@ -368,6 +371,27 @@ function Project() {
         <MDBCardBody> 
           <MDBRow className="g-4">
             <MDBCol md="5">
+              <MDBCardImage src={mbmbImage} alt="Card image" fluid className="rounded h-100" style={{objectFit: 'contain'}}/>
+            </MDBCol>
+            <MDBCol md="7">
+              <MDBCardBody className="text-start">
+                {ProjectCard(
+                  "Monster Beside My Bed",
+                  "Monster Beside My Bed is a personal project on a 2D side-scroller puzzle game made using personally drawn assets and Godot Engine. It follows the story of a girl and a certain creature beside her bed that must be fed each night at certain specific time.",
+                  false, "2d video game", "personal project"
+                )}
+              <div className="mt-3"/>
+              <a href="https://skiconcepcion.itch.io/monster-beside-my-bed" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}> Click here to visit itch.io page </a>
+              </MDBCardBody>
+            </MDBCol>
+          </MDBRow>
+        </MDBCardBody>
+      </MDBCard>
+
+      <MDBCard className="border mb-3">
+        <MDBCardBody> 
+          <MDBRow className="g-4">
+            <MDBCol md="5">
               <MDBCardImage src={travelwheelsImage} alt="Card image" fluid className="rounded h-100" style={{objectFit: 'contain'}}/>
             </MDBCol>
             <MDBCol md="7">
@@ -395,7 +419,7 @@ function Project() {
               <MDBCardBody className="text-start">
                 {ProjectCard(
                   "Nor Crying, Nor Pain",
-                  "Nor Crying, Nor Pain or NCNP is a personal project on a 2D side-scroller puzzle game made using personally drawn assets and Godot Engine. It follow the story of a reporter investigating a peculiar election process on a secluded village where the protagonist must navigate through the area and use the environment to solve puzzles and escape the eldtrich horror that lies within.",
+                  "Nor Crying, Nor Pain or NCNP is a personal project on a 2D side-scroller puzzle game made using personally drawn assets and Godot Engine. It follows the story of a reporter investigating a peculiar election process on a secluded village where the protagonist must navigate through the area and use the environment to solve puzzles and escape the eldtrich horror that lies within.",
                   true, "2d video game", "personal project"
                 )}
               <div className="mt-3"/>
