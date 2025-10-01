@@ -1,9 +1,11 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.593bdd14.css",
-    "main.js": "/portfolio/static/js/main.6a2f42f3.js",
+    "main.js": "/portfolio/static/js/main.2093d6f6.js",
+    "static/media/mbmb.png": "/portfolio/static/media/mbmb.185aab0b495567e5dda5.png",
     "static/media/travelwheels.png": "/portfolio/static/media/travelwheels.97979649eee5e6b8617e.png",
     "static/media/firstraider.png": "/portfolio/static/media/firstraider.28fdedc447b23a6ad39f.png",
+    "static/media/logo_alt.png": "/portfolio/static/media/logo_alt.c5181dc3a5ca121778ce.png",
     "static/media/timeline.png": "/portfolio/static/media/timeline.ab9cab1453743edb1583.png",
     "static/media/noah-alt.png": "/portfolio/static/media/noah-alt.e4ffee4d6758ca7800b8.png",
     "static/media/brics.png": "/portfolio/static/media/brics.4626c48fe3f7d60999e9.png",
@@ -22,14 +24,13 @@
     "static/media/art_entropy.jpg": "/portfolio/static/media/art_entropy.df376e8ef932bd49b3a5.jpg",
     "static/media/art_mirasol.jpg": "/portfolio/static/media/art_mirasol.e7b523d3e63d8a28694f.jpg",
     "static/media/sayo-luna.png": "/portfolio/static/media/sayo-luna.1c54e7855cc9c85f752b.png",
-    "static/media/logo.png": "/portfolio/static/media/logo.65dd7bd903071e12424d.png",
     "static/media/art_1314.jpg": "/portfolio/static/media/art_1314.7c392fec8e89bc0a8773.jpg",
     "index.html": "/portfolio/index.html",
     "main.593bdd14.css.map": "/portfolio/static/css/main.593bdd14.css.map",
-    "main.6a2f42f3.js.map": "/portfolio/static/js/main.6a2f42f3.js.map"
+    "main.2093d6f6.js.map": "/portfolio/static/js/main.2093d6f6.js.map"
   },
   "entrypoints": [
     "static/css/main.593bdd14.css",
-    "static/js/main.6a2f42f3.js"
+    "static/js/main.2093d6f6.js"
   ]
 }
