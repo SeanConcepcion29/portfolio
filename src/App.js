@@ -47,6 +47,7 @@ import healthmonImage from "./images/healthmon.png";
 import icsmsImage from "./images/icsms.png";
 import firstraiderImage from "./images/firstraider.png";
 import boatsImage from "./images/boats.png";
+import krizkhenImage from "./images/krizkhen-alt.png"
 
 import artOne from "./images/art_entropy.jpg";
 import artTwo from "./images/art_mirasol.jpg";
@@ -445,6 +446,27 @@ function Project() {
                 )}
                 <div className="mt-3"/>
                 <a href="https://seanconcepcion29.github.io/CMSC-161-BOATS/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}> Click here to visit website </a>
+              </MDBCardBody>
+            </MDBCol>
+          </MDBRow>
+        </MDBCardBody>
+      </MDBCard>
+
+      <MDBCard className="border mb-3">
+        <MDBCardBody> 
+          <MDBRow className="g-4">
+            <MDBCol md="5">
+              <MDBCardImage src={krizkhenImage} alt="Card image" fluid className="rounded h-100" style={{objectFit: 'contain'}}/>
+            </MDBCol>
+            <MDBCol md="7">
+              <MDBCardBody className="text-start">
+                {ProjectCard(
+                  "Krizkhen Floral Design: Order & Inventory Management System",
+                  "Krizkhen Floral Design is a freelance website project designed to serve as an order and inventory management system. It allows users to keep track of orders and inventory, as well as generate reports through PDF and visuals like graphs and charts.",
+                  true, "website", "freelance project"
+                )}
+                <div className="mt-3"/>
+                <a href="https://krizkhen-floral-design.vercel.app/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}> Click here to visit website </a>
               </MDBCardBody>
             </MDBCol>
           </MDBRow>
