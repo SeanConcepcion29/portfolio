@@ -462,7 +462,7 @@ function Project() {
               <MDBCardBody className="text-start">
                 {ProjectCard(
                   "Krizkhen Floral Design: Order & Inventory Management System",
-                  "Krizkhen Floral Design is a freelance website project designed to serve as an order and inventory management system. It allows users to keep track of orders and inventory, as well as generate reports through PDF and visuals like graphs and charts.",
+                  "Krizkhen Floral Design is a freelance website project designed to serve as an order and inventory management system for a flowers shop. It allows users to keep track of orders and inventory, as well as generate reports through PDF and visuals like graphs and charts.",
                   true, "website", "freelance project"
                 )}
                 <div className="mt-3"/>
