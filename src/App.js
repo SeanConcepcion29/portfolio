@@ -48,6 +48,7 @@ import icsmsImage from "./images/icsms.png";
 import firstraiderImage from "./images/firstraider.png";
 import boatsImage from "./images/boats.png";
 import krizkhenImage from "./images/krizkhen-alt.png"
+import roambaImage from "./images/roamba.png"
 
 import artOne from "./images/art_entropy.jpg";
 import artTwo from "./images/art_mirasol.jpg";
@@ -93,6 +94,8 @@ function ProjectCard(title, desc, done, type, purpose) {
   ? '#BC8CE0'
   : type === '2d video game'
   ? '#F376A0'
+  : type === 'robotics'
+  ? '#5651d6ff'
   : '#BFBFBF';
 
   const purposeColor = purpose === 'school activity' 
@@ -188,7 +191,7 @@ function About() {
         </MDBCol>
         <MDBCol md="4" className="text-start">
           <MDBCardTitle> MY WORK </MDBCardTitle>
-          <p>Most of his work revolves around Android mobile application, full-stack website, and 2D game development.</p>
+          <p>Most of his work revolves around Android mobile application, full-stack website, robotics, and 2D game development.</p>
         </MDBCol>
         <MDBCol md="4" className="text-start">
           <MDBCardTitle> CONTACTS </MDBCardTitle>
@@ -358,10 +361,31 @@ function Project() {
                 {ProjectCard(
                   "ARTISAN",
                   "ARTISAN (Accessible Routing and Topology Interactive Simulation for Applied Networking) is a mobile application for simulating and visualizing computer networks which seeks to provide better accessibility to networking tools that were once bound to desktops only.",
-                  false, "mobile application", "school activity"
+                  true, "mobile application", "school activity"
                 )}
                 <div className="mt-3"/>
                 <a href="https://github.com/SeanConcepcion29/artisan" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}> Click here to visit Github repository </a>
+              </MDBCardBody>
+            </MDBCol>
+          </MDBRow>
+        </MDBCardBody>
+      </MDBCard>
+
+      <MDBCard className="border mb-3">
+        <MDBCardBody> 
+          <MDBRow className="g-4">
+            <MDBCol md="5">
+              <MDBCardImage src={roambaImage} alt="Card image" fluid className="rounded h-100" style={{objectFit: 'contain'}}/>
+            </MDBCol>
+            <MDBCol md="7">
+              <MDBCardBody className="text-start">
+                {ProjectCard(
+                  "Roamba: Sensor-Based Debris Collection Robot",
+                  "Roamba is a compact sweeping robot engineered to push light-to-medium debris such as rocks into room corners using a hybrid of LEGO Mindstorms EV3 and Tetrix components. Equipped with ultrasonic and gyro sensors for precise movement, it offers reliable performance with room for future upgrades.",
+                  true, "robotics", "school activity"
+                )}
+                <div className="mt-3"/>
+                <a href="https://drive.google.com/drive/folders/1fw7EJLTt0KR1WuRggWEE7lcXpq9f9FSP?usp=sharing" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}> Click here to visit documentation </a>
               </MDBCardBody>
             </MDBCol>
           </MDBRow>
@@ -383,6 +407,28 @@ function Project() {
                 )}
               <div className="mt-3"/>
               <a href="https://skiconcepcion.itch.io/monster-beside-my-bed" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}> Click here to visit itch.io page </a>
+              </MDBCardBody>
+            </MDBCol>
+          </MDBRow>
+        </MDBCardBody>
+      </MDBCard>
+
+      
+      <MDBCard className="border mb-3">
+        <MDBCardBody> 
+          <MDBRow className="g-4">
+            <MDBCol md="5">
+              <MDBCardImage src={boatsImage} alt="Card image" fluid className="rounded h-100" style={{objectFit: 'contain'}}/>
+            </MDBCol>
+            <MDBCol md="7">
+              <MDBCardBody className="text-start">
+                {ProjectCard(
+                  "BOATS (Boat in Ocean: Animation and Terrain Simulation)",
+                  "Boat in Ocean - Animation and Terrain Simulation” or “BOATS” is an interactive simulation highlighting WebGL capabilities to render animations and objects.",
+                  true, "website", "school activity"
+                )}
+                <div className="mt-3"/>
+                <a href="https://seanconcepcion29.github.io/CMSC-161-BOATS/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}> Click here to visit website </a>
               </MDBCardBody>
             </MDBCol>
           </MDBRow>
@@ -425,27 +471,6 @@ function Project() {
                 )}
               <div className="mt-3"/>
               <a href="https://skiconcepcion.itch.io/nor-crying-nor-pain" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}> Click here to visit itch.io page </a>
-              </MDBCardBody>
-            </MDBCol>
-          </MDBRow>
-        </MDBCardBody>
-      </MDBCard>
-
-      <MDBCard className="border mb-3">
-        <MDBCardBody> 
-          <MDBRow className="g-4">
-            <MDBCol md="5">
-              <MDBCardImage src={boatsImage} alt="Card image" fluid className="rounded h-100" style={{objectFit: 'contain'}}/>
-            </MDBCol>
-            <MDBCol md="7">
-              <MDBCardBody className="text-start">
-                {ProjectCard(
-                  "BOATS (Boat in Ocean: Animation and Terrain Simulation)",
-                  "Boat in Ocean - Animation and Terrain Simulation” or “BOATS” is an interactive simulation highlighting WebGL capabilities to render animations and objects.",
-                  true, "website", "school activity"
-                )}
-                <div className="mt-3"/>
-                <a href="https://seanconcepcion29.github.io/CMSC-161-BOATS/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}> Click here to visit website </a>
               </MDBCardBody>
             </MDBCol>
           </MDBRow>
