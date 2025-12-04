@@ -380,7 +380,7 @@ function Project() {
             <MDBCol md="7">
               <MDBCardBody className="text-start">
                 {ProjectCard(
-                  "Roamba: Sensor-Based Debris Collection Robot",
+                  "Roamba: Sensor-Based Debris Sweeping Robot",
                   "Roamba is a compact sweeping robot engineered to push light-to-medium debris such as rocks into room corners using a hybrid of LEGO Mindstorms EV3 and Tetrix components. Equipped with ultrasonic and gyro sensors for precise movement, it offers reliable performance with room for future upgrades.",
                   true, "robotics", "school activity"
                 )}
