@@ -1,21 +1,23 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.593bdd14.css",
-    "main.js": "/portfolio/static/js/main.7116274c.js",
+    "main.css": "/portfolio/static/css/main.0488c038.css",
+    "main.js": "/portfolio/static/js/main.f9c93dec.js",
     "static/media/mbmb.png": "/portfolio/static/media/mbmb.185aab0b495567e5dda5.png",
     "static/media/roamba.png": "/portfolio/static/media/roamba.9885205428457ad44ab1.png",
     "static/media/travelwheels.png": "/portfolio/static/media/travelwheels.97979649eee5e6b8617e.png",
     "static/media/firstraider.png": "/portfolio/static/media/firstraider.28fdedc447b23a6ad39f.png",
     "static/media/krizkhen-alt.png": "/portfolio/static/media/krizkhen-alt.b6a6683dee742646eb5b.png",
     "static/media/logo_alt.png": "/portfolio/static/media/logo_alt.c5181dc3a5ca121778ce.png",
+    "static/media/brics.png": "/portfolio/static/media/brics.4626c48fe3f7d60999e9.png",
     "static/media/timeline.png": "/portfolio/static/media/timeline.ab9cab1453743edb1583.png",
     "static/media/noah-alt.png": "/portfolio/static/media/noah-alt.e4ffee4d6758ca7800b8.png",
-    "static/media/brics.png": "/portfolio/static/media/brics.4626c48fe3f7d60999e9.png",
     "static/media/healthmon.png": "/portfolio/static/media/healthmon.5901ec375313220f05b5.png",
     "static/media/boats.png": "/portfolio/static/media/boats.221933346afd5d3438ff.png",
     "static/media/ncnp.png": "/portfolio/static/media/ncnp.de2431684e39b2c3798e.png",
+    "static/media/upri.png": "/portfolio/static/media/upri.04abaf0dcc23f4d9c5be.png",
     "static/media/artisan.png": "/portfolio/static/media/artisan.9ab79fc4cb84338545c7.png",
     "static/media/art_self_portrait.png": "/portfolio/static/media/art_self_portrait.2475da1425347e9efeb1.png",
+    "static/media/cert-title.png": "/portfolio/static/media/cert-title.5a310abd2bdf2e1f384b.png",
     "static/media/title.png": "/portfolio/static/media/title.a49eb79303b410005f24.png",
     "static/media/proficiency-title.png": "/portfolio/static/media/proficiency-title.d911e96f99bb31525c6e.png",
     "static/media/icsms.png": "/portfolio/static/media/icsms.77a15b00203f60dec30e.png",
@@ -28,11 +30,11 @@
     "static/media/sayo-luna.png": "/portfolio/static/media/sayo-luna.1c54e7855cc9c85f752b.png",
     "static/media/art_1314.jpg": "/portfolio/static/media/art_1314.7c392fec8e89bc0a8773.jpg",
     "index.html": "/portfolio/index.html",
-    "main.593bdd14.css.map": "/portfolio/static/css/main.593bdd14.css.map",
-    "main.7116274c.js.map": "/portfolio/static/js/main.7116274c.js.map"
+    "main.0488c038.css.map": "/portfolio/static/css/main.0488c038.css.map",
+    "main.f9c93dec.js.map": "/portfolio/static/js/main.f9c93dec.js.map"
   },
   "entrypoints": [
-    "static/css/main.593bdd14.css",
-    "static/js/main.7116274c.js"
+    "static/css/main.0488c038.css",
+    "static/js/main.f9c93dec.js"
   ]
 }
