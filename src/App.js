@@ -24,6 +24,7 @@ import proficiencyTitle from './images/proficiency-title.png'
 import projectTitle from './images/project-title.png'
 import timelineTitle from './images/timeline-title.png'
 import artworkTitle from './images/artwork-title.png'
+import certificateTitle from './images/cert-title.png'
 import timeline from './images/timeline.png'
 
 import mongodbImage from "./images/mongodb.png";
@@ -49,6 +50,9 @@ import firstraiderImage from "./images/firstraider.png";
 import boatsImage from "./images/boats.png";
 import krizkhenImage from "./images/krizkhen-alt.png"
 import roambaImage from "./images/roamba.png"
+
+import upriCert from "./certificates/upri.png"
+import bricsCert from "./certificates/brics.png"
 
 import artOne from "./images/art_entropy.jpg";
 import artTwo from "./images/art_mirasol.jpg";
@@ -321,7 +325,8 @@ function Project() {
                   true, "website", "internship project"
                 )}
                 <div className="mt-3"/>
-                <a href="https://noah.up.edu.ph/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}> Click here to visit website </a>
+                Click here to:
+                <a href="https://noah.up.edu.ph/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", marginLeft: '7px' }}> Access website </a>
               </MDBCardBody>
             </MDBCol>
           </MDBRow>
@@ -343,7 +348,9 @@ function Project() {
                   true, "website", "school activity"
                 )}
                 <div className="mt-3"/>
-                <a href="https://brics-alpha.vercel.app/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}> Click here to visit website </a>
+                Click here to:
+                <a href="https://brics-alpha.vercel.app/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", marginLeft: '7px' }}> Access website</a>
+                <a href="https://github.com/SKIConcepcion/brics" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", marginLeft: '7px' }}> Visit Github repository </a>
               </MDBCardBody>
             </MDBCol>
           </MDBRow>
@@ -364,7 +371,9 @@ function Project() {
                   true, "mobile application", "school activity"
                 )}
                 <div className="mt-3"/>
-                <a href="https://github.com/SeanConcepcion29/artisan" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}> Click here to visit Github repository </a>
+                Click here to:
+                <a href="https://drive.google.com/drive/folders/1Q-5oSe8tmkWURqOQ3q2WT7Ej-2bUuNs7?usp=sharing" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", marginLeft: '7px' }}> Access APK & docs </a>
+                <a href="https://github.com/SeanConcepcion29/artisan" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", marginLeft: '7px' }}> Visit Github repository </a>
               </MDBCardBody>
             </MDBCol>
           </MDBRow>
@@ -385,7 +394,8 @@ function Project() {
                   true, "robotics", "school activity"
                 )}
                 <div className="mt-3"/>
-                <a href="https://drive.google.com/drive/folders/1fw7EJLTt0KR1WuRggWEE7lcXpq9f9FSP?usp=sharing" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}> Click here to visit documentation </a>
+                Click here to:
+                <a href="https://drive.google.com/drive/folders/1fw7EJLTt0KR1WuRggWEE7lcXpq9f9FSP?usp=sharing" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", marginLeft: '7px' }}> Access documentation </a>
               </MDBCardBody>
             </MDBCol>
           </MDBRow>
@@ -406,7 +416,9 @@ function Project() {
                   false, "2d video game", "personal project"
                 )}
               <div className="mt-3"/>
-              <a href="https://skiconcepcion.itch.io/monster-beside-my-bed" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}> Click here to visit itch.io page </a>
+              Click here to:
+              <a href="https://skiconcepcion.itch.io/monster-beside-my-bed" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", marginLeft: '7px' }}> Access itch.io page </a>
+              <a href="https://github.com/SKIConcepcion/mbmb" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", marginLeft: '7px' }}> Visit Github repository </a>
               </MDBCardBody>
             </MDBCol>
           </MDBRow>
@@ -428,7 +440,9 @@ function Project() {
                   true, "website", "school activity"
                 )}
                 <div className="mt-3"/>
-                <a href="https://seanconcepcion29.github.io/CMSC-161-BOATS/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}> Click here to visit website </a>
+                Click here to:
+                <a href="https://seanconcepcion29.github.io/CMSC-161-BOATS/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", marginLeft: '7px' }}> Access website </a>
+                <a href="https://github.com/SeanConcepcion29/CMSC-161-BOATS" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", marginLeft: '7px' }}> Visit Github repository </a>
               </MDBCardBody>
             </MDBCol>
           </MDBRow>
@@ -449,7 +463,8 @@ function Project() {
                   true, "website", "freelance project"
                 )}
                 <div className="mt-3"/>
-                <a href="https://travelwheelsph.com/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}> Click here to visit website </a>
+                Click here to:
+                <a href="https://travelwheelsph.com/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", marginLeft: '7px' }}> Access website </a>
               </MDBCardBody>
             </MDBCol>
           </MDBRow>
@@ -470,7 +485,9 @@ function Project() {
                   true, "2d video game", "personal project"
                 )}
               <div className="mt-3"/>
-              <a href="https://skiconcepcion.itch.io/nor-crying-nor-pain" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}> Click here to visit itch.io page </a>
+              Click here to:
+              <a href="https://skiconcepcion.itch.io/nor-crying-nor-pain" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", marginLeft: '7px' }}> Access itch.io page</a>
+              <a href="https://github.com/SKIConcepcion/ncnp" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", marginLeft: '7px' }}> Visit Github repository </a>
               </MDBCardBody>
             </MDBCol>
           </MDBRow>
@@ -491,7 +508,9 @@ function Project() {
                   true, "website", "freelance project"
                 )}
                 <div className="mt-3"/>
-                <a href="https://krizkhen-floral-design.vercel.app/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}> Click here to visit website </a>
+                Click here to:
+                <a href="https://krizkhen-floral-design.vercel.app/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", marginLeft: '7px' }}> Access website </a>
+                <a href="https://github.com/SKIConcepcion/krizkhen" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", marginLeft: '7px' }}> Visit Github repository </a>
               </MDBCardBody>
             </MDBCol>
           </MDBRow>
@@ -512,7 +531,9 @@ function Project() {
                   true, "2d video game", "personal project"
                 )}
               <div className="mt-3"/>
-              <a href="https://skiconcepcion.itch.io/sayo-luna" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}> Click here to visit itch.io page </a>
+              Click here to:
+              <a href="https://skiconcepcion.itch.io/sayo-luna" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", marginLeft: '7px' }}> Access itch.io page</a>
+              <a href="https://github.com/SKIConcepcion/sayoluna" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", marginLeft: '7px' }}> Visit Github repository </a>
               </MDBCardBody>
             </MDBCol>
           </MDBRow>
@@ -533,7 +554,9 @@ function Project() {
                   true, "mobile application", "freelance project"
                 )}
                 <div className="mt-3"/>
-                <a href="https://expo.dev/preview/update?message=Fix%20SDK%20issue&updateRuntimeVersion=1.0.0&createdAt=2025-03-26T10%3A18%3A30.706Z&slug=exp&projectId=1803f557-182b-4193-a1ce-7b1f53b2968f&group=94e01bfb-47dc-4bb6-bd40-9fb2ecb5aed7" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}> Click here to view downloadable qr code </a>        
+                Click here to:
+                <a href="https://expo.dev/preview/update?message=Fix%20SDK%20issue&updateRuntimeVersion=1.0.0&createdAt=2025-03-26T10%3A18%3A30.706Z&slug=exp&projectId=1803f557-182b-4193-a1ce-7b1f53b2968f&group=94e01bfb-47dc-4bb6-bd40-9fb2ecb5aed7" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", marginLeft: '7px' }}> Access downloadable QR code </a>
+                <a href="https://github.com/SKIConcepcion/firstraider" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", marginLeft: '7px' }}> Visit Github repository </a>
               </MDBCardBody>
             </MDBCol>
           </MDBRow>
@@ -554,7 +577,8 @@ function Project() {
                   true, "mobile application", "school activity"
                 )}
                 <div className="mt-3"/>
-                <a href="https://github.com/SKIConcepcion/healthmon" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}> Click here to visit Github repository </a>        
+                Click here to:
+                <a href="https://github.com/SKIConcepcion/healthmon" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", marginLeft: '7px' }}> Visit Github repository </a>       
               </MDBCardBody>
             </MDBCol>
           </MDBRow>
@@ -575,7 +599,8 @@ function Project() {
                   true, "website", "school activity"
                 )}
                 <div className="mt-3"/>
-                <a href="https://github.com/SKIConcepcion/icscms" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}> Click here to visit Github repository </a>
+                Click here to:
+                <a href="https://github.com/SKIConcepcion/icscms" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", marginLeft: '7px' }}> Visit Github repository </a>
               </MDBCardBody>
             </MDBCol>
           </MDBRow>
@@ -619,6 +644,34 @@ function Artwork() {
   );
 }
 
+function Certificate() {
+  return (
+    <MDBCard
+      style={{ border: "none", boxShadow: "none", overflow: "hidden", color: "#333" }}
+      className="mt-3"
+    >
+      <div className="d-flex justify-content-center mb-4">
+        <img
+          src={certificateTitle}
+          style={{ height: "auto", width: "55vw", maxWidth: "450px" }}
+          className="p-2 text-center"
+        />
+      </div>
+
+      <MDBCol md="8">
+        <MDBRow className="g-4 mb-4">
+          <MDBCol xs="12" md="6">
+            <ArtCard src={upriCert} title="UPRI Completion" desc="Certificate of Completion"/>
+          </MDBCol>
+
+          <MDBCol xs="12" md="6">
+            <ArtCard src={bricsCert} title="Best Presenter Award" desc="Certificate of Recognition"/>
+          </MDBCol>
+        </MDBRow>
+      </MDBCol>
+    </MDBCard>
+  );
+}
 
 
 
@@ -645,6 +698,7 @@ function App() {
       case "about": return (About()); 
       case "project": return (Project());
       case "artwork": return (Artwork()); 
+      case "certificate": return (Certificate()); 
       case "resume": return (Resume()); 
       default: return null;
     }
@@ -698,6 +752,15 @@ function App() {
                 onClick={() => setActiveTab("artwork")}
               >
                 artworks
+              </MDBNavbarLink>
+            </MDBNavbarItem>
+            <MDBNavbarItem className="me-4">
+              <MDBNavbarLink
+                className={activeTab === "certificate" ? "active-tab-certificate" : ""}
+                active={activeTab === "certificate"}
+                onClick={() => setActiveTab("certificate")}
+              >
+                certificates
               </MDBNavbarLink>
             </MDBNavbarItem>
 

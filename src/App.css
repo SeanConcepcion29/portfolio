@@ -39,6 +39,11 @@ html {
     color: #F376A0;
 }
 
+.active-tab-certificate {
+    border-bottom: 3px solid #BC8CE0; 
+    color: #BC8CE0;
+}
+
 .active-tab-resume {
     border-bottom: 3px solid #BFBFBF; 
     color: #BFBFBF;
