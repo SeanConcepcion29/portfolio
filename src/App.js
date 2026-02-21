@@ -373,7 +373,7 @@ function Project() {
                 <div className="mt-3"/>
                 Click here to:
                 <a href="https://drive.google.com/drive/folders/1Q-5oSe8tmkWURqOQ3q2WT7Ej-2bUuNs7?usp=sharing" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", marginLeft: '7px' }}> Access APK & docs </a>
-                <a href="https://github.com/SeanConcepcion29/artisan" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", marginLeft: '7px' }}> Visit Github repository </a>
+                <a href="https://github.com/SKIConcepcion/artisan" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", marginLeft: '7px' }}> Visit Github repository </a>
               </MDBCardBody>
             </MDBCol>
           </MDBRow>
@@ -465,6 +465,7 @@ function Project() {
                 <div className="mt-3"/>
                 Click here to:
                 <a href="https://travelwheelsph.com/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", marginLeft: '7px' }}> Access website </a>
+                <a href="https://github.com/SKIConcepcion/travelwheelsph" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", marginLeft: '7px' }}> Visit Github repository </a>
               </MDBCardBody>
             </MDBCol>
           </MDBRow>
@@ -735,7 +736,7 @@ function App() {
               >
                 about
               </MDBNavbarLink>
-            </MDBNavbarItem>
+            </MDBNavbarItem> 
             <MDBNavbarItem className="me-4">
               <MDBNavbarLink
                 className={activeTab === "project" ? "active-tab-project" : ""}
