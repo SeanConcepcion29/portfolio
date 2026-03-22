@@ -191,11 +191,11 @@ function About() {
       <MDBRow className="mt-3 w-100 m-0 h-100 d-flex" id="aboutme">
         <MDBCol md="4" className="text-start">
           <MDBCardTitle> PERSONAL INFO </MDBCardTitle>
-          <p>Sean Concepcion is a senior BS Computer Science student from the University of the Philippines Los Baños (UPLB). His experience includes serving as a Backend Team Leader of a website dev team in UPLB and numerous school-related, freelance, and personal projects.</p>
+          <p>Sean Kierby Concepcion is a BS Computer Science graduate of UP Los Baños with experience in mobile and full-stack web development, highlighted by his work as a Mobile App Developer at BAJ Pharmaceuticals, contributions to a nationwide project (NOAH), and hands-on experience delivering freelance projects.</p>
         </MDBCol>
         <MDBCol md="4" className="text-start">
           <MDBCardTitle> MY WORK </MDBCardTitle>
-          <p>Most of his work revolves around Android mobile application, full-stack website, robotics, and 2D game development.</p>
+          <p>Most of his work revolves around mobile applications, full-stack websites, robotics, and 2D game development.</p>
         </MDBCol>
         <MDBCol md="4" className="text-start">
           <MDBCardTitle> CONTACTS </MDBCardTitle>
